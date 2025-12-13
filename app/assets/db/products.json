@@ -1,0 +1,874 @@
+{
+  "list": [
+    {
+      "id": "lp-001",
+      "title": "Apple MacBook Pro 16-inch M3 Max",
+      "shortName": "MacBook Pro M3",
+      "description": "The most powerful MacBook Pro ever, featuring the M3 Max chip for extreme performance and a stunning Liquid Retina XDR display.",
+      "price": 3499.0,
+      "discount": 5,
+      "stockCount": 25,
+      "specs": {
+        "Processor": "Apple M3 Max",
+        "RAM": "36GB Unified",
+        "Storage": "1TB SSD",
+        "Display": "16.2-inch Liquid Retina XDR",
+        "Battery Life": "Up to 22 hours"
+      },
+      "category": "Laptops"
+    },
+    {
+      "id": "lp-002",
+      "title": "Dell XPS 15 OLED Touch Laptop",
+      "shortName": "Dell XPS 15",
+      "description": "High-performance laptop with a captivating OLED InfinityEdge display and 13th Gen Intel Core processors.",
+      "price": 2299.0,
+      "discount": 10,
+      "stockCount": 40,
+      "specs": {
+        "Processor": "Intel Core i9-13900H",
+        "RAM": "32GB DDR5",
+        "Storage": "1TB NVMe SSD",
+        "GPU": "NVIDIA RTX 4060",
+        "Display": "15.6 OLED Touch"
+      },
+      "category": "Laptops"
+    },
+    {
+      "id": "lp-003",
+      "title": "ASUS ROG Strix Scar 18 Gaming Laptop",
+      "shortName": "ROG Strix 18",
+      "description": "Dominate the competition with the ROG Strix Scar 18, featuring a massive 18-inch Nebula Display.",
+      "price": 2899.99,
+      "discount": 0,
+      "stockCount": 15,
+      "specs": {
+        "Processor": "Intel Core i9-14900HX",
+        "GPU": "NVIDIA GeForce RTX 4090",
+        "RAM": "32GB DDR5",
+        "Refresh Rate": "240Hz",
+        "Storage": "2TB RAID 0"
+      },
+      "category": "Laptops"
+    },
+    {
+      "id": "lp-004",
+      "title": "Lenovo ThinkPad X1 Carbon Gen 11",
+      "shortName": "ThinkPad X1",
+      "description": "Ultralight and durable, this business laptop offers heavy-duty performance in a featherweight chassis.",
+      "price": 1899.0,
+      "discount": 15,
+      "stockCount": 60,
+      "specs": {
+        "Processor": "Intel Core i7-1365U",
+        "Weight": "2.48 lbs",
+        "RAM": "16GB LPDDR5",
+        "Material": "Carbon Fiber",
+        "OS": "Windows 11 Pro"
+      },
+      "category": "Laptops"
+    },
+    {
+      "id": "pc-005",
+      "title": "HP OMEN 45L Gaming Desktop",
+      "shortName": "HP OMEN 45L",
+      "description": "Designed for gaming performance with the patented OMEN Cryo Chamber cooling system.",
+      "price": 2499.99,
+      "discount": 8,
+      "stockCount": 12,
+      "specs": {
+        "Processor": "Intel Core i7-13700K",
+        "GPU": "NVIDIA RTX 4080",
+        "RAM": "32GB Kingston Fury",
+        "Cooling": "Liquid Cooled",
+        "Storage": "1TB SSD + 2TB HDD"
+      },
+      "category": "PC"
+    },
+    {
+      "id": "pc-006",
+      "title": "Apple Mac Mini M2 Pro",
+      "shortName": "Mac Mini M2",
+      "description": "Workhorse performance in a compact footprint. Ideal for developers and creatives.",
+      "price": 1299.0,
+      "discount": 0,
+      "stockCount": 55,
+      "specs": {
+        "Processor": "Apple M2 Pro",
+        "Cores": "10-core CPU, 16-core GPU",
+        "RAM": "16GB Unified",
+        "Ports": "4x Thunderbolt 4",
+        "Storage": "512GB SSD"
+      },
+      "category": "PC"
+    },
+    {
+      "id": "cp-007",
+      "title": "NVIDIA GeForce RTX 4090 Founder's Edition",
+      "shortName": "RTX 4090",
+      "description": "The ultimate GeForce GPU. It brings an enormous leap in performance, efficiency, and AI-powered graphics.",
+      "price": 1599.0,
+      "discount": 0,
+      "stockCount": 5,
+      "specs": {
+        "VRAM": "24GB GDDR6X",
+        "Cuda Cores": "16384",
+        "Boost Clock": "2.52 GHz",
+        "Architecture": "Ada Lovelace",
+        "Slot Size": "3-Slot"
+      },
+      "category": "Components"
+    },
+    {
+      "id": "cp-008",
+      "title": "AMD Ryzen 9 7950X3D Processor",
+      "shortName": "Ryzen 7950X3D",
+      "description": "The dominant gaming processor with AMD 3D V-Cache technology for low latency.",
+      "price": 699.0,
+      "discount": 12,
+      "stockCount": 30,
+      "specs": {
+        "Cores": 16,
+        "Threads": 32,
+        "Socket": "AM5",
+        "Max Boost": "5.7 GHz",
+        "Cache": "144MB"
+      },
+      "category": "Components"
+    },
+    {
+      "id": "cp-009",
+      "title": "Samsung 990 PRO NVMe SSD 2TB",
+      "shortName": "Samsung 990 Pro",
+      "description": "Blistering speed, endless victory. The ultimate SSD for heavy gaming and video editing.",
+      "price": 179.99,
+      "discount": 20,
+      "stockCount": 100,
+      "specs": {
+        "Capacity": "2TB",
+        "Interface": "PCIe 4.0",
+        "Read Speed": "7450 MB/s",
+        "Write Speed": "6900 MB/s",
+        "Form Factor": "M.2 2280"
+      },
+      "category": "Storage"
+    },
+    {
+      "id": "cp-010",
+      "title": "Corsair Vengeance RGB DDR5 32GB RAM",
+      "shortName": "Corsair RAM 32GB",
+      "description": "Push the limits of your system with DDR5 memory that unlocks higher frequencies.",
+      "price": 129.99,
+      "discount": 5,
+      "stockCount": 75,
+      "specs": {
+        "Type": "DDR5",
+        "Speed": "6000MHz",
+        "Capacity": "32GB (2x16GB)",
+        "Lighting": "RGB",
+        "Latency": "CL36"
+      },
+      "category": "Components"
+    },
+    {
+      "id": "st-011",
+      "title": "SanDisk Extreme Portable SSD V2 1TB",
+      "shortName": "SanDisk SSD 1TB",
+      "description": "Rugged storage that resists water and dust, perfect for content creators on the go.",
+      "price": 99.0,
+      "discount": 15,
+      "stockCount": 80,
+      "specs": {
+        "Capacity": "1TB",
+        "Type": "Portable SSD",
+        "Connector": "USB-C",
+        "Durability": "IP55 Rating",
+        "Speed": "1050 MB/s"
+      },
+      "category": "Storage"
+    },
+    {
+      "id": "st-012",
+      "title": "WD_BLACK 4TB P10 Game Drive",
+      "shortName": "WD Game Drive",
+      "description": "Portable external hard drive built specifically for gamers to expand console or PC storage.",
+      "price": 119.0,
+      "discount": 10,
+      "stockCount": 45,
+      "specs": {
+        "Capacity": "4TB",
+        "Type": "HDD",
+        "Interface": "USB 3.2 Gen 1",
+        "Compatibility": "Xbox/PS5/PC",
+        "Color": "Black"
+      },
+      "category": "Storage"
+    },
+    {
+      "id": "sp-013",
+      "title": "Apple iPhone 15 Pro Max",
+      "shortName": "iPhone 15 Pro Max",
+      "description": "Forged in titanium. Features the game-changing A17 Pro chip and the most advanced iPhone camera system.",
+      "price": 1199.0,
+      "discount": 0,
+      "stockCount": 50,
+      "specs": {
+        "Screen": "6.7-inch Super Retina XDR",
+        "Processor": "A17 Pro",
+        "Camera": "48MP Main | 5x Telephoto",
+        "Material": "Titanium",
+        "Storage": "256GB"
+      },
+      "category": "Smartphones"
+    },
+    {
+      "id": "sp-014",
+      "title": "Samsung Galaxy S24 Ultra",
+      "shortName": "Galaxy S24 Ultra",
+      "description": "Unleash new ways to create, connect, and more with Galaxy AI on the S24 Ultra.",
+      "price": 1299.99,
+      "discount": 5,
+      "stockCount": 45,
+      "specs": {
+        "Screen": "6.8-inch QHD+ AMOLED",
+        "Processor": "Snapdragon 8 Gen 3",
+        "Stylus": "S Pen Included",
+        "Camera": "200MP Wide",
+        "Battery": "5000 mAh"
+      },
+      "category": "Smartphones"
+    },
+    {
+      "id": "sp-015",
+      "title": "Google Pixel 8 Pro",
+      "shortName": "Pixel 8 Pro",
+      "description": "The all-pro phone engineered by Google. It's super fast, secure, and features the best Pixel Camera yet.",
+      "price": 999.0,
+      "discount": 15,
+      "stockCount": 35,
+      "specs": {
+        "Screen": "6.7-inch LTPO OLED",
+        "Processor": "Google Tensor G3",
+        "RAM": "12GB",
+        "OS": "Android 14",
+        "Feature": "Magic Eraser"
+      },
+      "category": "Smartphones"
+    },
+    {
+      "id": "sp-016",
+      "title": "OnePlus 12",
+      "shortName": "OnePlus 12",
+      "description": "Smooth beyond belief. A flagship experience with ultra-fast charging and Hasselblad camera system.",
+      "price": 799.99,
+      "discount": 0,
+      "stockCount": 20,
+      "specs": {
+        "Charging": "80W SuperVOOC",
+        "Processor": "Snapdragon 8 Gen 3",
+        "Display": "120Hz ProXDR",
+        "RAM": "16GB",
+        "Battery": "5400 mAh"
+      },
+      "category": "Smartphones"
+    },
+    {
+      "id": "acc-017",
+      "title": "Anker 737 Power Bank (PowerCore 24K)",
+      "shortName": "Anker 737",
+      "description": "Ultra-powerful two-way charging. Capable of charging a laptop and phone simultaneously.",
+      "price": 149.99,
+      "discount": 20,
+      "stockCount": 65,
+      "specs": {
+        "Capacity": "24,000 mAh",
+        "Output": "140W Max",
+        "Ports": "2x USB-C, 1x USB-A",
+        "Display": "Smart Digital Display",
+        "Weight": "630g"
+      },
+      "category": "Accessories"
+    },
+    {
+      "id": "acc-018",
+      "title": "Apple MagSafe Charger",
+      "shortName": "MagSafe Charger",
+      "description": "The MagSafe Charger makes wireless charging a snap for iPhone 12 and later models.",
+      "price": 39.0,
+      "discount": 0,
+      "stockCount": 150,
+      "specs": {
+        "Power": "15W Wireless",
+        "Connector": "USB-C",
+        "Compatibility": "Qi Compatible",
+        "Cable Length": "1m",
+        "Magnet": "Integrated"
+      },
+      "category": "Accessories"
+    },
+    {
+      "id": "acc-019",
+      "title": "Samsung Galaxy SmartTag2",
+      "shortName": "SmartTag2",
+      "description": "Keep track of your valuables with an extended battery life and durable design.",
+      "price": 29.99,
+      "discount": 10,
+      "stockCount": 200,
+      "specs": {
+        "Connectivity": "Bluetooth + UWB",
+        "Battery Life": "Up to 500 days",
+        "Rating": "IP67 Water Resistant",
+        "Feature": "Compass View",
+        "Color": "White"
+      },
+      "category": "Accessories"
+    },
+    {
+      "id": "tb-020",
+      "title": "Apple iPad Pro 12.9-inch (6th Gen)",
+      "shortName": "iPad Pro 12.9",
+      "description": "The ultimate iPad experience with M2 chip, 5G capability, and mini-LED display.",
+      "price": 1099.0,
+      "discount": 5,
+      "stockCount": 30,
+      "specs": {
+        "Display": "Liquid Retina XDR",
+        "Processor": "M2 Chip",
+        "Storage": "128GB",
+        "Connectivity": "Wi-Fi 6E",
+        "Camera": "12MP Wide"
+      },
+      "category": "Tablets"
+    },
+    {
+      "id": "tb-021",
+      "title": "Samsung Galaxy Tab S9 Ultra",
+      "shortName": "Tab S9 Ultra",
+      "description": "The largest Dynamic AMOLED 2X display on a tablet. Water and dust resistant.",
+      "price": 1199.99,
+      "discount": 10,
+      "stockCount": 25,
+      "specs": {
+        "Screen Size": "14.6-inch",
+        "Protection": "IP68 Rating",
+        "Processor": "Snapdragon 8 Gen 2",
+        "Accessory": "S Pen (In-Box)",
+        "Storage": "512GB"
+      },
+      "category": "Tablets"
+    },
+    {
+      "id": "tb-022",
+      "title": "Microsoft Surface Pro 9",
+      "shortName": "Surface Pro 9",
+      "description": "Tablet portability and laptop performance. The 2-in-1 that defined the category.",
+      "price": 999.99,
+      "discount": 12,
+      "stockCount": 35,
+      "specs": {
+        "Processor": "Intel Evo i5",
+        "Screen": "13-inch PixelSense",
+        "Kickstand": "Adjustable",
+        "RAM": "8GB",
+        "OS": "Windows 11 Home"
+      },
+      "category": "Tablets"
+    },
+    {
+      "id": "tv-023",
+      "title": "LG C3 Series 65-Inch OLED evo TV",
+      "shortName": "LG OLED C3",
+      "description": "The best all-around OLED TV. Perfect blacks, infinite contrast, and great for gaming.",
+      "price": 1699.0,
+      "discount": 20,
+      "stockCount": 18,
+      "specs": {
+        "Resolution": "4K UHD",
+        "Refresh Rate": "120Hz",
+        "Processor": "a9 AI Processor Gen6",
+        "HDR": "Dolby Vision",
+        "Gaming": "G-Sync / FreeSync"
+      },
+      "category": "TVs"
+    },
+    {
+      "id": "tv-024",
+      "title": "Samsung Odyssey G9 49\" OLED Monitor",
+      "shortName": "Odyssey G9 OLED",
+      "description": "A massive ultrawide curved gaming monitor with 0.03ms response time.",
+      "price": 1199.99,
+      "discount": 15,
+      "stockCount": 10,
+      "specs": {
+        "Size": "49-inch Curved",
+        "Ratio": "32:9",
+        "Panel": "OLED",
+        "Refresh Rate": "240Hz",
+        "Response": "0.03ms (GtG)"
+      },
+      "category": "Monitors"
+    },
+    {
+      "id": "tv-025",
+      "title": "Dell UltraSharp 27 4K USB-C Hub Monitor",
+      "shortName": "Dell U2723QE",
+      "description": "Be your most productive on a 27-inch monitor with brilliant color and contrast with IPS Black technology.",
+      "price": 624.99,
+      "discount": 5,
+      "stockCount": 40,
+      "specs": {
+        "Resolution": "3840 x 2160",
+        "Panel": "IPS Black",
+        "Connectivity": "USB-C Hub (90W PD)",
+        "Color Accuracy": "98% DCI-P3",
+        "Adjustability": "Tilt/Swivel/Pivot"
+      },
+      "category": "Monitors"
+    },
+    {
+      "id": "tv-026",
+      "title": "Sony Bravia XR A80L 55-inch OLED",
+      "shortName": "Sony A80L",
+      "description": "Pure black OLED contrast and Cognitive Processor XR for realistic picture and sound.",
+      "price": 1399.0,
+      "discount": 10,
+      "stockCount": 12,
+      "specs": {
+        "Type": "OLED",
+        "OS": "Google TV",
+        "Sound": "Acoustic Surface Audio+",
+        "HDMI 2.1": "Yes (2 ports)",
+        "Resolution": "4K"
+      },
+      "category": "TVs"
+    },
+    {
+      "id": "hp-027",
+      "title": "Sony WH-1000XM5 Wireless Headphones",
+      "shortName": "Sony XM5",
+      "description": "Industry-leading noise cancellation with two processors and eight microphones.",
+      "price": 399.99,
+      "discount": 12,
+      "stockCount": 85,
+      "specs": {
+        "Type": "Over-Ear",
+        "Battery": "30 Hours",
+        "Features": "ANC, LDAC",
+        "Charging": "Quick Charge",
+        "Microphones": "8"
+      },
+      "category": "Headphones"
+    },
+    {
+      "id": "hp-028",
+      "title": "Bose QuietComfort Ultra Headphones",
+      "shortName": "Bose QC Ultra",
+      "description": "World-class noise cancellation meets breakthrough spatial audio for immersive listening.",
+      "price": 429.0,
+      "discount": 0,
+      "stockCount": 60,
+      "specs": {
+        "Audio": "Immersive Audio",
+        "Mode": "Quiet/Aware/Immersion",
+        "Battery": "24 Hours",
+        "Connectivity": "Bluetooth 5.3",
+        "Comfort": "Plush Cushions"
+      },
+      "category": "Headphones"
+    },
+    {
+      "id": "hp-029",
+      "title": "Sennheiser Momentum 4 Wireless",
+      "shortName": "Momentum 4",
+      "description": "Audiophile-inspired sound system with an incredible 60-hour battery life.",
+      "price": 349.95,
+      "discount": 25,
+      "stockCount": 40,
+      "specs": {
+        "Battery": "60 Hours",
+        "Driver": "42mm Transducer",
+        "Codec": "aptX Adaptive",
+        "ANC": "Adaptive",
+        "Control": "Touch"
+      },
+      "category": "Headphones"
+    },
+    {
+      "id": "ap-030",
+      "title": "Apple AirPods Pro (2nd Generation)",
+      "shortName": "AirPods Pro 2",
+      "description": "Rebuilt from the sound up. Up to 2x more Active Noise Cancellation and USB-C charging.",
+      "price": 249.0,
+      "discount": 20,
+      "stockCount": 150,
+      "specs": {
+        "Chip": "H2 Headphone Chip",
+        "Case": "MagSafe (USB-C)",
+        "Rating": "IP54 Dust/Water",
+        "Audio": "Spatial Audio",
+        "Battery": "6h (30h total)"
+      },
+      "category": "AirPods"
+    },
+    {
+      "id": "ap-031",
+      "title": "Apple AirPods Max",
+      "shortName": "AirPods Max",
+      "description": "A perfect balance of exhilarating high-fidelity audio and the effortless magic of AirPods.",
+      "price": 549.0,
+      "discount": 5,
+      "stockCount": 25,
+      "specs": {
+        "Design": "Over-Ear",
+        "Canopy": "Knit Mesh",
+        "ANC": "Active Noise Cancellation",
+        "Color": "Space Gray",
+        "Sensors": "Optical/Position"
+      },
+      "category": "AirPods"
+    },
+    {
+      "id": "cm-032",
+      "title": "Sony Alpha 7 IV Mirrorless Camera",
+      "shortName": "Sony A7 IV",
+      "description": "The hybrid camera standard. 33MP sensor and 4K 60p video recording.",
+      "price": 2498.0,
+      "discount": 0,
+      "stockCount": 10,
+      "specs": {
+        "Sensor": "33MP Full-Frame Exmor R",
+        "Video": "4K 60p 10-bit",
+        "Autofocus": "Real-time Eye AF",
+        "ISO": "100-51200",
+        "Body": "Magnesium Alloy"
+      },
+      "category": "Cameras"
+    },
+    {
+      "id": "cm-033",
+      "title": "Canon EOS R6 Mark II",
+      "shortName": "Canon R6 II",
+      "description": "Master stills and motion. High speed shooting up to 40 fps and advanced subject detection.",
+      "price": 2299.0,
+      "discount": 5,
+      "stockCount": 14,
+      "specs": {
+        "Sensor": "24.2MP CMOS",
+        "Burst": "40 fps Electronic",
+        "Stabilization": "In-Body (IBIS)",
+        "Video": "4K 60p oversampled",
+        "Mount": "RF Mount"
+      },
+      "category": "Cameras"
+    },
+    {
+      "id": "cm-034",
+      "title": "GoPro HERO12 Black",
+      "shortName": "GoPro HERO12",
+      "description": "Incredible image quality, even better HyperSmooth video stabilization, and huge battery boost.",
+      "price": 399.99,
+      "discount": 10,
+      "stockCount": 65,
+      "specs": {
+        "Resolution": "5.3K60 Video",
+        "Photo": "27MP",
+        "Waterproof": "33ft (10m)",
+        "Stabilization": "HyperSmooth 6.0",
+        "Screen": "Front + Rear LCD"
+      },
+      "category": "Cameras"
+    },
+    {
+      "id": "cm-035",
+      "title": "Fujifilm X100VI",
+      "shortName": "Fuji X100VI",
+      "description": "The latest iteration of the iconic compact camera. Features 40MP sensor and IBIS.",
+      "price": 1599.0,
+      "discount": 0,
+      "stockCount": 3,
+      "specs": {
+        "Lens": "Fixed 23mm F2",
+        "Sensor": "40MP X-Trans 5",
+        "Stabilization": "6-stop IBIS",
+        "Simulation": "20 Film Modes",
+        "ND Filter": "Built-in 4-stop"
+      },
+      "category": "Cameras"
+    },
+    {
+      "id": "spk-036",
+      "title": "Sonos Era 300 Wireless Speaker",
+      "shortName": "Sonos Era 300",
+      "description": "A revolutionary speaker built for spatial audio with support for Dolby Atmos.",
+      "price": 449.0,
+      "discount": 0,
+      "stockCount": 35,
+      "specs": {
+        "Audio": "Spatial Audio / Dolby Atmos",
+        "Connectivity": "WiFi 6 / Bluetooth",
+        "Input": "USB-C Line-in",
+        "Voice": "Alexa / Sonos Voice",
+        "Drivers": "6"
+      },
+      "category": "Speakers"
+    },
+    {
+      "id": "spk-037",
+      "title": "JBL Flip 6 Portable Bluetooth Speaker",
+      "shortName": "JBL Flip 6",
+      "description": "Bold sound for every adventure. Waterproof and dustproof.",
+      "price": 129.95,
+      "discount": 23,
+      "stockCount": 120,
+      "specs": {
+        "Battery": "12 Hours",
+        "Rating": "IP67",
+        "Power": "20W Woofer + 10W Tweeter",
+        "Feature": "PartyBoost",
+        "Weight": "0.55 kg"
+      },
+      "category": "Speakers"
+    },
+    {
+      "id": "spk-038",
+      "title": "Bose SoundLink Flex",
+      "shortName": "Bose Flex",
+      "description": "State-of-the-art design tailored for travel. Clear sound regardless of orientation.",
+      "price": 149.0,
+      "discount": 10,
+      "stockCount": 90,
+      "specs": {
+        "Technology": "PositionIQ",
+        "Waterproof": "IP67",
+        "Battery": "12 Hours",
+        "Microphone": "Built-in",
+        "Floatable": "Yes"
+      },
+      "category": "Speakers"
+    },
+    {
+      "id": "pc-039",
+      "title": "Corsair RM1000e Power Supply",
+      "shortName": "Corsair PSU",
+      "description": "Fully modular, low-noise ATX power supply with ATX 3.0 compatibility.",
+      "price": 179.99,
+      "discount": 5,
+      "stockCount": 45,
+      "specs": {
+        "Wattage": "1000W",
+        "Efficiency": "80 Plus Gold",
+        "Modular": "Fully Modular",
+        "Fan": "Zero RPM Mode",
+        "Connector": "12VHPWR Cable"
+      },
+      "category": "Components"
+    },
+    {
+      "id": "pc-040",
+      "title": "NZXT H9 Flow Case",
+      "shortName": "NZXT H9",
+      "description": "Dual-chamber mid-tower airflow case with seamless glass panel for showcasing components.",
+      "price": 159.99,
+      "discount": 0,
+      "stockCount": 20,
+      "specs": {
+        "Type": "Dual Chamber",
+        "Fans Included": "4 x 120mm",
+        "Glass": "Wrap-around Tempered",
+        "Support": "360mm Radiator",
+        "Color": "White"
+      },
+      "category": "Components"
+    },
+    {
+      "id": "acc-041",
+      "title": "Logitech MX Master 3S Mouse",
+      "shortName": "MX Master 3S",
+      "description": "An icon remastered. 8K DPI tracking and Quiet Click technology.",
+      "price": 99.99,
+      "discount": 5,
+      "stockCount": 110,
+      "specs": {
+        "DPI": "8000",
+        "Scroll": "MagSpeed Electromagnetic",
+        "Buttons": "7 Customizable",
+        "Connectivity": "Bluetooth / Bolt",
+        "Battery": "70 Days"
+      },
+      "category": "Accessories"
+    },
+    {
+      "id": "acc-042",
+      "title": "Keychron Q1 Pro Mechanical Keyboard",
+      "shortName": "Keychron Q1 Pro",
+      "description": "QMK/VIA wireless custom mechanical keyboard with a full aluminum body.",
+      "price": 199.0,
+      "discount": 0,
+      "stockCount": 25,
+      "specs": {
+        "Layout": "75%",
+        "Body": "CNC Aluminum",
+        "Connectivity": "Bluetooth 5.1 / Wired",
+        "Switch": "Hot-swappable",
+        "Keycaps": "KSA PBT"
+      },
+      "category": "Accessories"
+    },
+    {
+      "id": "st-043",
+      "title": "Seagate IronWolf 8TB NAS Internal HDD",
+      "shortName": "IronWolf 8TB",
+      "description": "Built for NAS environments. Tough, ready, and scalable 24/7 performance.",
+      "price": 189.99,
+      "discount": 15,
+      "stockCount": 40,
+      "specs": {
+        "Capacity": "8TB",
+        "RPM": "7200",
+        "Cache": "256MB",
+        "Interface": "SATA 6Gb/s",
+        "Tech": "AgileArray"
+      },
+      "category": "Storage"
+    },
+    {
+      "id": "lp-044",
+      "title": "Acer Swift Go 14",
+      "shortName": "Acer Swift Go",
+      "description": "Lightweight OLED laptop perfect for students and professionals on the move.",
+      "price": 899.99,
+      "discount": 10,
+      "stockCount": 50,
+      "specs": {
+        "Processor": "Intel Core Ultra 7",
+        "Display": "14-inch 2.8K OLED",
+        "Weight": "1.32 kg",
+        "RAM": "16GB",
+        "Webcam": "1440p QHD"
+      },
+      "category": "Laptops"
+    },
+    {
+      "id": "sp-045",
+      "title": "Nothing Phone (2)",
+      "shortName": "Nothing Phone 2",
+      "description": "Iconic Glyph Interface. New Nothing OS 2.0. Uniquely designed smartphone.",
+      "price": 699.0,
+      "discount": 5,
+      "stockCount": 20,
+      "specs": {
+        "Processor": "Snapdragon 8+ Gen 1",
+        "Interface": "Glyph Lights",
+        "Screen": "6.7 OLED LTPO",
+        "Battery": "4700 mAh",
+        "Back": "Transparent Glass"
+      },
+      "category": "Smartphones"
+    },
+    {
+      "id": "tb-046",
+      "title": "Amazon Fire HD 10 Tablet",
+      "shortName": "Fire HD 10",
+      "description": "Made for entertainment. 10.1-inch 1080p Full HD display and long battery life.",
+      "price": 139.99,
+      "discount": 25,
+      "stockCount": 300,
+      "specs": {
+        "Screen": "10.1-inch 1080p",
+        "Storage": "32GB (Expandable)",
+        "RAM": "3GB",
+        "Battery": "13 Hours",
+        "OS": "Fire OS"
+      },
+      "category": "Tablets"
+    },
+    {
+      "id": "tv-047",
+      "title": "TCL 65-Inch QM8 QLED Mini-LED TV",
+      "shortName": "TCL QM8",
+      "description": "Flagship 4K Mini-LED TV with incredible brightness and local dimming zones.",
+      "price": 1199.99,
+      "discount": 15,
+      "stockCount": 22,
+      "specs": {
+        "Backlight": "Mini-LED",
+        "Brightness": "2000 Nits",
+        "Refresh Rate": "144Hz VRR",
+        "Dimming Zones": "2300+",
+        "OS": "Google TV"
+      },
+      "category": "TVs"
+    },
+    {
+      "id": "spk-048",
+      "title": "Marshall Stanmore III Bluetooth Speaker",
+      "shortName": "Marshall Stanmore",
+      "description": "Legendary design with a wide soundstage that re-engineers the home immersion experience.",
+      "price": 379.0,
+      "discount": 0,
+      "stockCount": 15,
+      "specs": {
+        "Type": "Home Bluetooth",
+        "Inputs": "RCA / 3.5mm / BT",
+        "Knobs": "Bass/Treble/Volume",
+        "Material": "Vegan Leather",
+        "App": "Marshall Bluetooth"
+      },
+      "category": "Speakers"
+    },
+    {
+      "id": "cm-049",
+      "title": "DJI Mini 4 Pro Drone",
+      "shortName": "DJI Mini 4 Pro",
+      "description": "Mini to the Max. Weighs under 249g with omnidirectional obstacle sensing.",
+      "price": 759.0,
+      "discount": 0,
+      "stockCount": 28,
+      "specs": {
+        "Weight": "< 249g",
+        "Video": "4K/60fps HDR",
+        "Transmission": "20km FHD",
+        "Flight Time": "34 Mins",
+        "Sensing": "Omnidirectional"
+      },
+      "category": "Cameras"
+    },
+    {
+      "id": "hp-050",
+      "title": "Audio-Technica ATH-M50x",
+      "shortName": "ATH-M50x",
+      "description": "Professional monitor headphones, critically acclaimed for sonic performance.",
+      "price": 169.0,
+      "discount": 15,
+      "stockCount": 200,
+      "specs": {
+        "Type": "Closed-back Dynamic",
+        "Driver": "45mm",
+        "Cable": "Detachable (3 included)",
+        "Use Case": "Studio Monitoring",
+        "Impedance": "38 ohms"
+      },
+      "category": "Headphones"
+    }
+  ],
+
+  "itemCount": 50,
+
+  "totalStockCount": 2849,
+
+  "categories": [
+    "Laptops",
+    "PC",
+    "Components",
+    "Storage",
+    "Smartphones",
+    "Accessories",
+    "Tablets",
+    "TVs",
+    "Monitors",
+    "Headphones",
+    "AirPods",
+    "Cameras",
+    "Speakers"
+  ]
+}

@@ -1,0 +1,110 @@
+@utility grid-auto-fill-* {
+  --min: calc(--value(number) * 1px);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, var(--min)), 1fr));
+}
+@utility grid-auto-fit-* {
+  --min: calc(--value(number) * 1px);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
+}
+
+@utility important-txt {
+  @apply text-primary font-bold;
+}
+
+@utility pagination {
+  & > * {
+    counter-increment: page;
+    position: relative;
+    contain: layout;
+
+    &::before {
+      content: counter(page, decimal-leading-zero);
+      font-size: 1.25rem;
+      position: absolute;
+      z-index: -1;
+      top: 3px;
+      left: 10px;
+      font-family: saira;
+      color: var(--color-primary);
+    }
+  }
+}
+
+@utility custom-output {
+  @apply bg-secondary-700 text-primary rounded-sm p-2.5 font-mono wrap-anywhere;
+}
+
+@utility custom-button {
+  @apply bg-primary-800 duration-global relative transform-gpu cursor-pointer content-center rounded-xl px-5 py-2 text-center text-[1rem] font-bold contain-content select-none;
+
+  &:hover:not(:disabled),
+  &:focus-visible:not(:disabled) {
+    @apply bg-primary-600;
+  }
+
+  &:active {
+    @apply bg-primary-600 scale-95;
+  }
+
+  &:disabled {
+    @apply pointer-events-none opacity-50;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  &::before {
+    content: '';
+    width: 70px;
+    height: 300%;
+    position: absolute;
+    background-image: linear-gradient(to left, transparent, var(--color-primary-800), transparent);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    rotate: z 30deg;
+    z-index: -1;
+    animation: left-right infinite alternate 3s;
+  }
+}
+
+@utility custom-link {
+  @apply bg-secondary-600 duration-global relative flex cursor-pointer items-center justify-center rounded-full px-4 py-1.5 text-center font-bold contain-content select-none;
+
+  &::before {
+    content: '';
+    position: absolute;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 300ms;
+  }
+
+  &:hover {
+    @apply bg-secondary;
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 0 2px #ffffff;
+  }
+
+  &.router-link-active {
+    &::before {
+      transform: scaleX(1);
+      background-color: var(--color-green-600);
+    }
+  }
+
+  &.router-link-exact-active {
+    &::before {
+      transform: scaleX(1);
+      background-color: var(--color-green-500);
+    }
+  }
+}

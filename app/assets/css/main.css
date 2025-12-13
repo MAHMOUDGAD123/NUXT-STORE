@@ -1,0 +1,6 @@
+@import './tailwind.css';
+@import '@nuxt/ui';
+@import './fonts.css';
+@import './keyframes.css';
+@import './transition.css';
+@import './view-transition.css';

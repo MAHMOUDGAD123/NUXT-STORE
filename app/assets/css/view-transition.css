@@ -1,0 +1,16 @@
+@keyframes circle-in {
+  from {
+    clip-path: circle(0% at var(--toggle-x, 100%) var(--toggle-y, 0%));
+  }
+  to {
+    clip-path: circle(150% at var(--toggle-x, 100%) var(--toggle-y, 0%));
+  }
+}
+
+::view-transition-old(root) {
+  animation-delay: 0.25s;
+}
+
+::view-transition-new(root) {
+  animation: 0.25s ease-in both circle-in;
+}
