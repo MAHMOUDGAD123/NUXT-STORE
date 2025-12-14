@@ -48,13 +48,13 @@
       >
         <template #item="{ item }">
           <UTooltip
-            :text="item.label"
             :delay-duration="0"
             :ui="{
               content: 'text-primary p-1 px-2.5 rounded-full bg-accented font-bold',
             }"
             :content="{ avoidCollisions: true, sideOffset: 15 }"
           >
+            <template #content>{{ item.label }}</template>
             <UIcon :name="item.icon" />
           </UTooltip>
         </template>
@@ -73,45 +73,64 @@
     </template>
 
     <template #right>
-      <UTooltip
-        text="+9"
-        :delay-duration="0"
-        :content="{ avoidCollisions: true, sideOffset: 5, side: 'bottom' }"
-        class="hover:text-primary focus-visible:text-primary relative"
-        :ui="{
-          content: 'bg-accented font-bold text-primary rounded-full',
-        }"
-      >
-        <UButton
-          :to="{ name: 'cart' }"
-          variant="ghost"
-          :size="iconSize"
-          color="neutral"
-          icon="fa7-solid:cart-shopping"
-          :class="{ 'text-primary': $route.name === 'cart' }"
-        />
-      </UTooltip>
-
       <ClientOnly>
-        <UTooltip
-          :text="theme.toUpperCase()"
-          :delay-duration="0"
-          :content="{ avoidCollisions: true, sideOffset: 5, side: 'bottom' }"
-          class="hover:text-primary focus-visible:text-primary relative"
-          :ui="{
-            content: 'bg-accented font-bold text-primary rounded-full',
-          }"
+        <UChip
+          text="+3"
+          size="3xl"
+          :ui="{ base: 'p-2' }"
+          :show="$route.name !== 'wishlist'"
+          position="top-left"
         >
           <UButton
-            ref="themeToggleBtn"
-            :size="iconSize"
+            :to="{ name: 'wishlist' }"
             variant="ghost"
+            :size="iconSize"
             color="neutral"
-            :icon="theme === 'dark' ? 'lucide:moon' : 'ph:sun-bold'"
+            :icon="$route.name === 'wishlist' ? 'fa7-solid:heart' : 'fa7-regular:heart'"
             class="hover:text-primary focus-visible:text-primary"
-            @click="themeStore.toggleTheme"
-          />
-        </UTooltip>
+            :class="{ 'text-primary': $route.name === 'wishlist' }"
+          >
+          </UButton>
+        </UChip>
+        <template #fallback>
+          <UButton icon="line-md:heart" variant="ghost" :size="iconSize" color="neutral" />
+        </template>
+      </ClientOnly>
+
+      <ClientOnly>
+        <UChip
+          text="+9"
+          size="3xl"
+          :ui="{ base: 'p-2' }"
+          :show="$route.name !== 'cart'"
+          position="top-left"
+        >
+          <UButton
+            :to="{ name: 'cart' }"
+            variant="ghost"
+            :size="iconSize"
+            color="neutral"
+            :icon="$route.name === 'cart' ? 'mdi:cart' : 'mdi:cart-outline'"
+            class="hover:text-primary focus-visible:text-primary"
+            :class="{ 'text-primary': $route.name === 'cart' }"
+          >
+          </UButton>
+        </UChip>
+        <template #fallback>
+          <UButton icon="mdi:cart-outline" variant="ghost" :size="iconSize" color="neutral" />
+        </template>
+      </ClientOnly>
+
+      <ClientOnly>
+        <UButton
+          ref="themeToggleBtn"
+          :size="iconSize"
+          variant="ghost"
+          color="neutral"
+          :icon="theme === 'dark' ? 'lucide:moon' : 'ph:sun-bold'"
+          class="hover:text-primary focus-visible:text-primary"
+          @click="themeStore.toggleTheme"
+        />
         <template #fallback>
           <UButton loading variant="ghost" :size="iconSize" color="neutral" />
         </template>

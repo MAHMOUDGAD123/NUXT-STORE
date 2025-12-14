@@ -6,6 +6,8 @@ declare module 'strict-vue-router' {
 
     cart: CustomRouteInfo<['/cart'], ['/cart'], 'Cart'>;
 
+    wishlist: CustomRouteInfo<['/wishlist'], ['/wishlist'], 'Wishlist'>;
+
     receipts: CustomRouteInfo<['/receipts'], ['/receipts'], 'receipts'>;
 
     profile: CustomRouteInfo<['/profile'], ['/profile'], 'Profile'>;

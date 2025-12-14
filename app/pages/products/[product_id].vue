@@ -5,14 +5,14 @@
     title: `Product ${route.params.product_id}`,
   });
 
+  const categoryStore = useCategoryFilterStore();
+  const product = categoryStore.getItemById(route.params.product_id as string);
+
   definePageMeta({
     name: 'product',
     pageHero: 'PRODUCT',
     pageHeroIcon: 'fa7-solid:basket-shopping',
   });
-
-  const productStore = useProductStore();
-  const product = productStore.getItemById(route.params.product_id as string);
 </script>
 
 <template>

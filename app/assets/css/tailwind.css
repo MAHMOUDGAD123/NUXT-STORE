@@ -66,7 +66,7 @@
   :root {
     interpolate-size: allow-keywords;
     scroll-behavior: smooth;
-    scrollbar-color: var(--color-primary) var(--color-primary-800);
+    scrollbar-color: var(--color-primary) var(--background-color-default);
     font-family: robotomono, monospace, sans-serif;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -82,10 +82,10 @@
   *::after {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
     outline: none;
     border: none;
-    scrollbar-width: none;
-    scrollbar-gutter: stable;
+    scrollbar-width: thin;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -moz-tap-highlight-color: rgba(0, 0, 0, 0);
   }

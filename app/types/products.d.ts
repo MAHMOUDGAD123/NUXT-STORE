@@ -7,7 +7,11 @@ interface Item {
   discount: number; // Percentage as a number (e.g., 10 for 10%) or distinct amount
   stockCount: number;
   specs: Record<string, string | number | boolean>;
-  category: string;
+  category: Category;
+}
+
+interface ItemWithIcon extends Item {
+  icon: string;
 }
 
 interface Products {
@@ -18,16 +22,18 @@ interface Products {
 }
 
 type Category =
-  | 'Laptops'
-  | 'PC'
-  | 'Components'
-  | 'Storage'
-  | 'Smartphones'
-  | 'Accessories'
-  | 'Tablets'
-  | 'TVs'
-  | 'Monitors'
-  | 'Headphones'
-  | 'AirPods'
-  | 'Cameras'
-  | 'Speakers';
+  | 'laptops'
+  | 'pc'
+  | 'components'
+  | 'storage'
+  | 'smartphones'
+  | 'accessories'
+  | 'tablets'
+  | 'tvs'
+  | 'monitors'
+  | 'headphones'
+  | 'airpods'
+  | 'cameras'
+  | 'speakers';
+
+type FilterCategory = Category | 'all';

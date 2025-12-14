@@ -11,11 +11,11 @@
       "specs": {
         "Processor": "Apple M3 Max",
         "RAM": "36GB Unified",
-        "Storage": "1TB SSD",
+        "storage": "1TB SSD",
         "Display": "16.2-inch Liquid Retina XDR",
         "Battery Life": "Up to 22 hours"
       },
-      "category": "Laptops"
+      "category": "laptops"
     },
     {
       "id": "lp-002",
@@ -28,11 +28,11 @@
       "specs": {
         "Processor": "Intel Core i9-13900H",
         "RAM": "32GB DDR5",
-        "Storage": "1TB NVMe SSD",
+        "storage": "1TB NVMe SSD",
         "GPU": "NVIDIA RTX 4060",
         "Display": "15.6 OLED Touch"
       },
-      "category": "Laptops"
+      "category": "laptops"
     },
     {
       "id": "lp-003",
@@ -47,9 +47,9 @@
         "GPU": "NVIDIA GeForce RTX 4090",
         "RAM": "32GB DDR5",
         "Refresh Rate": "240Hz",
-        "Storage": "2TB RAID 0"
+        "storage": "2TB RAID 0"
       },
-      "category": "Laptops"
+      "category": "laptops"
     },
     {
       "id": "lp-004",
@@ -66,7 +66,7 @@
         "Material": "Carbon Fiber",
         "OS": "Windows 11 Pro"
       },
-      "category": "Laptops"
+      "category": "laptops"
     },
     {
       "id": "pc-005",
@@ -81,9 +81,9 @@
         "GPU": "NVIDIA RTX 4080",
         "RAM": "32GB Kingston Fury",
         "Cooling": "Liquid Cooled",
-        "Storage": "1TB SSD + 2TB HDD"
+        "storage": "1TB SSD + 2TB HDD"
       },
-      "category": "PC"
+      "category": "pc"
     },
     {
       "id": "pc-006",
@@ -98,9 +98,9 @@
         "Cores": "10-core CPU, 16-core GPU",
         "RAM": "16GB Unified",
         "Ports": "4x Thunderbolt 4",
-        "Storage": "512GB SSD"
+        "storage": "512GB SSD"
       },
-      "category": "PC"
+      "category": "pc"
     },
     {
       "id": "cp-007",
@@ -117,7 +117,7 @@
         "Architecture": "Ada Lovelace",
         "Slot Size": "3-Slot"
       },
-      "category": "Components"
+      "category": "components"
     },
     {
       "id": "cp-008",
@@ -134,7 +134,7 @@
         "Max Boost": "5.7 GHz",
         "Cache": "144MB"
       },
-      "category": "Components"
+      "category": "components"
     },
     {
       "id": "cp-009",
@@ -151,7 +151,7 @@
         "Write Speed": "6900 MB/s",
         "Form Factor": "M.2 2280"
       },
-      "category": "Storage"
+      "category": "storage"
     },
     {
       "id": "cp-010",
@@ -168,7 +168,7 @@
         "Lighting": "RGB",
         "Latency": "CL36"
       },
-      "category": "Components"
+      "category": "components"
     },
     {
       "id": "st-011",
@@ -185,13 +185,13 @@
         "Durability": "IP55 Rating",
         "Speed": "1050 MB/s"
       },
-      "category": "Storage"
+      "category": "storage"
     },
     {
       "id": "st-012",
       "title": "WD_BLACK 4TB P10 Game Drive",
       "shortName": "WD Game Drive",
-      "description": "Portable external hard drive built specifically for gamers to expand console or PC storage.",
+      "description": "Portable external hard drive built specifically for gamers to expand console or pc storage.",
       "price": 119.0,
       "discount": 10,
       "stockCount": 45,
@@ -199,10 +199,10 @@
         "Capacity": "4TB",
         "Type": "HDD",
         "Interface": "USB 3.2 Gen 1",
-        "Compatibility": "Xbox/PS5/PC",
+        "Compatibility": "Xbox/PS5/pc",
         "Color": "Black"
       },
-      "category": "Storage"
+      "category": "storage"
     },
     {
       "id": "sp-013",
@@ -217,9 +217,9 @@
         "Processor": "A17 Pro",
         "Camera": "48MP Main | 5x Telephoto",
         "Material": "Titanium",
-        "Storage": "256GB"
+        "storage": "256GB"
       },
-      "category": "Smartphones"
+      "category": "smartphones"
     },
     {
       "id": "sp-014",
@@ -236,7 +236,7 @@
         "Camera": "200MP Wide",
         "Battery": "5000 mAh"
       },
-      "category": "Smartphones"
+      "category": "smartphones"
     },
     {
       "id": "sp-015",
@@ -253,7 +253,7 @@
         "OS": "Android 14",
         "Feature": "Magic Eraser"
       },
-      "category": "Smartphones"
+      "category": "smartphones"
     },
     {
       "id": "sp-016",
@@ -270,7 +270,7 @@
         "RAM": "16GB",
         "Battery": "5400 mAh"
       },
-      "category": "Smartphones"
+      "category": "smartphones"
     },
     {
       "id": "acc-017",
@@ -287,7 +287,7 @@
         "Display": "Smart Digital Display",
         "Weight": "630g"
       },
-      "category": "Accessories"
+      "category": "accessories"
     },
     {
       "id": "acc-018",
@@ -304,7 +304,7 @@
         "Cable Length": "1m",
         "Magnet": "Integrated"
       },
-      "category": "Accessories"
+      "category": "accessories"
     },
     {
       "id": "acc-019",
@@ -321,7 +321,7 @@
         "Feature": "Compass View",
         "Color": "White"
       },
-      "category": "Accessories"
+      "category": "accessories"
     },
     {
       "id": "tb-020",
@@ -334,11 +334,11 @@
       "specs": {
         "Display": "Liquid Retina XDR",
         "Processor": "M2 Chip",
-        "Storage": "128GB",
+        "storage": "128GB",
         "Connectivity": "Wi-Fi 6E",
         "Camera": "12MP Wide"
       },
-      "category": "Tablets"
+      "category": "tablets"
     },
     {
       "id": "tb-021",
@@ -353,9 +353,9 @@
         "Protection": "IP68 Rating",
         "Processor": "Snapdragon 8 Gen 2",
         "Accessory": "S Pen (In-Box)",
-        "Storage": "512GB"
+        "storage": "512GB"
       },
-      "category": "Tablets"
+      "category": "tablets"
     },
     {
       "id": "tb-022",
@@ -372,7 +372,7 @@
         "RAM": "8GB",
         "OS": "Windows 11 Home"
       },
-      "category": "Tablets"
+      "category": "tablets"
     },
     {
       "id": "tv-023",
@@ -389,7 +389,7 @@
         "HDR": "Dolby Vision",
         "Gaming": "G-Sync / FreeSync"
       },
-      "category": "TVs"
+      "category": "tvs"
     },
     {
       "id": "tv-024",
@@ -406,7 +406,7 @@
         "Refresh Rate": "240Hz",
         "Response": "0.03ms (GtG)"
       },
-      "category": "Monitors"
+      "category": "monitors"
     },
     {
       "id": "tv-025",
@@ -423,7 +423,7 @@
         "Color Accuracy": "98% DCI-P3",
         "Adjustability": "Tilt/Swivel/Pivot"
       },
-      "category": "Monitors"
+      "category": "monitors"
     },
     {
       "id": "tv-026",
@@ -440,11 +440,11 @@
         "HDMI 2.1": "Yes (2 ports)",
         "Resolution": "4K"
       },
-      "category": "TVs"
+      "category": "tvs"
     },
     {
       "id": "hp-027",
-      "title": "Sony WH-1000XM5 Wireless Headphones",
+      "title": "Sony WH-1000XM5 Wireless headphones",
       "shortName": "Sony XM5",
       "description": "Industry-leading noise cancellation with two processors and eight microphones.",
       "price": 399.99,
@@ -457,11 +457,11 @@
         "Charging": "Quick Charge",
         "Microphones": "8"
       },
-      "category": "Headphones"
+      "category": "headphones"
     },
     {
       "id": "hp-028",
-      "title": "Bose QuietComfort Ultra Headphones",
+      "title": "Bose QuietComfort Ultra headphones",
       "shortName": "Bose QC Ultra",
       "description": "World-class noise cancellation meets breakthrough spatial audio for immersive listening.",
       "price": 429.0,
@@ -474,7 +474,7 @@
         "Connectivity": "Bluetooth 5.3",
         "Comfort": "Plush Cushions"
       },
-      "category": "Headphones"
+      "category": "headphones"
     },
     {
       "id": "hp-029",
@@ -491,12 +491,12 @@
         "ANC": "Adaptive",
         "Control": "Touch"
       },
-      "category": "Headphones"
+      "category": "headphones"
     },
     {
       "id": "ap-030",
-      "title": "Apple AirPods Pro (2nd Generation)",
-      "shortName": "AirPods Pro 2",
+      "title": "Apple airpods Pro (2nd Generation)",
+      "shortName": "airpods Pro 2",
       "description": "Rebuilt from the sound up. Up to 2x more Active Noise Cancellation and USB-C charging.",
       "price": 249.0,
       "discount": 20,
@@ -508,13 +508,13 @@
         "Audio": "Spatial Audio",
         "Battery": "6h (30h total)"
       },
-      "category": "AirPods"
+      "category": "airpods"
     },
     {
       "id": "ap-031",
-      "title": "Apple AirPods Max",
-      "shortName": "AirPods Max",
-      "description": "A perfect balance of exhilarating high-fidelity audio and the effortless magic of AirPods.",
+      "title": "Apple airpods Max",
+      "shortName": "airpods Max",
+      "description": "A perfect balance of exhilarating high-fidelity audio and the effortless magic of airpods.",
       "price": 549.0,
       "discount": 5,
       "stockCount": 25,
@@ -525,7 +525,7 @@
         "Color": "Space Gray",
         "Sensors": "Optical/Position"
       },
-      "category": "AirPods"
+      "category": "airpods"
     },
     {
       "id": "cm-032",
@@ -542,7 +542,7 @@
         "ISO": "100-51200",
         "Body": "Magnesium Alloy"
       },
-      "category": "Cameras"
+      "category": "cameras"
     },
     {
       "id": "cm-033",
@@ -559,7 +559,7 @@
         "Video": "4K 60p oversampled",
         "Mount": "RF Mount"
       },
-      "category": "Cameras"
+      "category": "cameras"
     },
     {
       "id": "cm-034",
@@ -576,7 +576,7 @@
         "Stabilization": "HyperSmooth 6.0",
         "Screen": "Front + Rear LCD"
       },
-      "category": "Cameras"
+      "category": "cameras"
     },
     {
       "id": "cm-035",
@@ -593,7 +593,7 @@
         "Simulation": "20 Film Modes",
         "ND Filter": "Built-in 4-stop"
       },
-      "category": "Cameras"
+      "category": "cameras"
     },
     {
       "id": "spk-036",
@@ -610,7 +610,7 @@
         "Voice": "Alexa / Sonos Voice",
         "Drivers": "6"
       },
-      "category": "Speakers"
+      "category": "speakers"
     },
     {
       "id": "spk-037",
@@ -627,7 +627,7 @@
         "Feature": "PartyBoost",
         "Weight": "0.55 kg"
       },
-      "category": "Speakers"
+      "category": "speakers"
     },
     {
       "id": "spk-038",
@@ -644,7 +644,7 @@
         "Microphone": "Built-in",
         "Floatable": "Yes"
       },
-      "category": "Speakers"
+      "category": "speakers"
     },
     {
       "id": "pc-039",
@@ -661,7 +661,7 @@
         "Fan": "Zero RPM Mode",
         "Connector": "12VHPWR Cable"
       },
-      "category": "Components"
+      "category": "components"
     },
     {
       "id": "pc-040",
@@ -678,7 +678,7 @@
         "Support": "360mm Radiator",
         "Color": "White"
       },
-      "category": "Components"
+      "category": "components"
     },
     {
       "id": "acc-041",
@@ -695,7 +695,7 @@
         "Connectivity": "Bluetooth / Bolt",
         "Battery": "70 Days"
       },
-      "category": "Accessories"
+      "category": "accessories"
     },
     {
       "id": "acc-042",
@@ -712,7 +712,7 @@
         "Switch": "Hot-swappable",
         "Keycaps": "KSA PBT"
       },
-      "category": "Accessories"
+      "category": "accessories"
     },
     {
       "id": "st-043",
@@ -729,7 +729,7 @@
         "Interface": "SATA 6Gb/s",
         "Tech": "AgileArray"
       },
-      "category": "Storage"
+      "category": "storage"
     },
     {
       "id": "lp-044",
@@ -746,7 +746,7 @@
         "RAM": "16GB",
         "Webcam": "1440p QHD"
       },
-      "category": "Laptops"
+      "category": "laptops"
     },
     {
       "id": "sp-045",
@@ -763,7 +763,7 @@
         "Battery": "4700 mAh",
         "Back": "Transparent Glass"
       },
-      "category": "Smartphones"
+      "category": "smartphones"
     },
     {
       "id": "tb-046",
@@ -775,12 +775,12 @@
       "stockCount": 300,
       "specs": {
         "Screen": "10.1-inch 1080p",
-        "Storage": "32GB (Expandable)",
+        "storage": "32GB (Expandable)",
         "RAM": "3GB",
         "Battery": "13 Hours",
         "OS": "Fire OS"
       },
-      "category": "Tablets"
+      "category": "tablets"
     },
     {
       "id": "tv-047",
@@ -797,7 +797,7 @@
         "Dimming Zones": "2300+",
         "OS": "Google TV"
       },
-      "category": "TVs"
+      "category": "tvs"
     },
     {
       "id": "spk-048",
@@ -814,7 +814,7 @@
         "Material": "Vegan Leather",
         "App": "Marshall Bluetooth"
       },
-      "category": "Speakers"
+      "category": "speakers"
     },
     {
       "id": "cm-049",
@@ -831,7 +831,7 @@
         "Flight Time": "34 Mins",
         "Sensing": "Omnidirectional"
       },
-      "category": "Cameras"
+      "category": "cameras"
     },
     {
       "id": "hp-050",
@@ -848,7 +848,7 @@
         "Use Case": "Studio Monitoring",
         "Impedance": "38 ohms"
       },
-      "category": "Headphones"
+      "category": "headphones"
     }
   ],
 
@@ -857,18 +857,18 @@
   "totalStockCount": 2849,
 
   "categories": [
-    "Laptops",
-    "PC",
-    "Components",
-    "Storage",
-    "Smartphones",
-    "Accessories",
-    "Tablets",
-    "TVs",
-    "Monitors",
-    "Headphones",
-    "AirPods",
-    "Cameras",
-    "Speakers"
+    "laptops",
+    "pc",
+    "components",
+    "storage",
+    "smartphones",
+    "accessories",
+    "tablets",
+    "tvs",
+    "monitors",
+    "headphones",
+    "airpods",
+    "cameras",
+    "speakers"
   ]
 }
