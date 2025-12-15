@@ -2,6 +2,17 @@
 
 <template>
   <UApp>
+    <UBanner
+      title="The app is still in development"
+      close
+      color="primary"
+      icon="material-symbols:info-outline-rounded"
+      :ui="{
+        left: 'lg:hidden',
+        center: 'text-lg',
+      }"
+    />
+
     <MainHeader />
 
     <UContainer as="main" class="min-h-[calc(100vh-var(--ui-header-height))]">
