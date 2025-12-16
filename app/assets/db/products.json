@@ -9,7 +9,7 @@
       "discount": 5,
       "stockCount": 25,
       "specs": {
-        "Processor": "Apple M3 Max",
+        "CPU": "Apple M3 Max",
         "RAM": "36GB Unified",
         "storage": "1TB SSD",
         "Display": "16.2-inch Liquid Retina XDR",
@@ -26,7 +26,7 @@
       "discount": 10,
       "stockCount": 40,
       "specs": {
-        "Processor": "Intel Core i9-13900H",
+        "CPU": "Intel Core i9-13900H",
         "RAM": "32GB DDR5",
         "storage": "1TB NVMe SSD",
         "GPU": "NVIDIA RTX 4060",
@@ -43,7 +43,7 @@
       "discount": 0,
       "stockCount": 15,
       "specs": {
-        "Processor": "Intel Core i9-14900HX",
+        "CPU": "Intel Core i9-14900HX",
         "GPU": "NVIDIA GeForce RTX 4090",
         "RAM": "32GB DDR5",
         "Refresh Rate": "240Hz",
@@ -60,7 +60,7 @@
       "discount": 15,
       "stockCount": 60,
       "specs": {
-        "Processor": "Intel Core i7-1365U",
+        "CPU": "Intel Core i7-1365U",
         "Weight": "2.48 lbs",
         "RAM": "16GB LPDDR5",
         "Material": "Carbon Fiber",
@@ -77,7 +77,7 @@
       "discount": 8,
       "stockCount": 12,
       "specs": {
-        "Processor": "Intel Core i7-13700K",
+        "CPU": "Intel Core i7-13700K",
         "GPU": "NVIDIA RTX 4080",
         "RAM": "32GB Kingston Fury",
         "Cooling": "Liquid Cooled",
@@ -94,7 +94,7 @@
       "discount": 0,
       "stockCount": 55,
       "specs": {
-        "Processor": "Apple M2 Pro",
+        "CPU": "Apple M2 Pro",
         "Cores": "10-core CPU, 16-core GPU",
         "RAM": "16GB Unified",
         "Ports": "4x Thunderbolt 4",
@@ -121,7 +121,7 @@
     },
     {
       "id": "cp-008",
-      "title": "AMD Ryzen 9 7950X3D Processor",
+      "title": "AMD Ryzen 9 7950X3D CPU",
       "shortName": "Ryzen 7950X3D",
       "description": "The dominant gaming processor with AMD 3D V-Cache technology for low latency.",
       "price": 699.0,
@@ -214,7 +214,7 @@
       "stockCount": 50,
       "specs": {
         "Screen": "6.7-inch Super Retina XDR",
-        "Processor": "A17 Pro",
+        "CPU": "A17 Pro",
         "Camera": "48MP Main | 5x Telephoto",
         "Material": "Titanium",
         "storage": "256GB"
@@ -231,7 +231,7 @@
       "stockCount": 45,
       "specs": {
         "Screen": "6.8-inch QHD+ AMOLED",
-        "Processor": "Snapdragon 8 Gen 3",
+        "CPU": "Snapdragon 8 Gen 3",
         "Stylus": "S Pen Included",
         "Camera": "200MP Wide",
         "Battery": "5000 mAh"
@@ -248,7 +248,7 @@
       "stockCount": 35,
       "specs": {
         "Screen": "6.7-inch LTPO OLED",
-        "Processor": "Google Tensor G3",
+        "CPU": "Google Tensor G3",
         "RAM": "12GB",
         "OS": "Android 14",
         "Feature": "Magic Eraser"
@@ -265,7 +265,7 @@
       "stockCount": 20,
       "specs": {
         "Charging": "80W SuperVOOC",
-        "Processor": "Snapdragon 8 Gen 3",
+        "CPU": "Snapdragon 8 Gen 3",
         "Display": "120Hz ProXDR",
         "RAM": "16GB",
         "Battery": "5400 mAh"
@@ -333,7 +333,7 @@
       "stockCount": 30,
       "specs": {
         "Display": "Liquid Retina XDR",
-        "Processor": "M2 Chip",
+        "CPU": "M2 Chip",
         "storage": "128GB",
         "Connectivity": "Wi-Fi 6E",
         "Camera": "12MP Wide"
@@ -351,7 +351,7 @@
       "specs": {
         "Screen Size": "14.6-inch",
         "Protection": "IP68 Rating",
-        "Processor": "Snapdragon 8 Gen 2",
+        "CPU": "Snapdragon 8 Gen 2",
         "Accessory": "S Pen (In-Box)",
         "storage": "512GB"
       },
@@ -366,7 +366,7 @@
       "discount": 12,
       "stockCount": 35,
       "specs": {
-        "Processor": "Intel Evo i5",
+        "CPU": "Intel Evo i5",
         "Screen": "13-inch PixelSense",
         "Kickstand": "Adjustable",
         "RAM": "8GB",
@@ -385,7 +385,7 @@
       "specs": {
         "Resolution": "4K UHD",
         "Refresh Rate": "120Hz",
-        "Processor": "a9 AI Processor Gen6",
+        "CPU": "a9 AI CPU Gen6",
         "HDR": "Dolby Vision",
         "Gaming": "G-Sync / FreeSync"
       },
@@ -429,7 +429,7 @@
       "id": "tv-026",
       "title": "Sony Bravia XR A80L 55-inch OLED",
       "shortName": "Sony A80L",
-      "description": "Pure black OLED contrast and Cognitive Processor XR for realistic picture and sound.",
+      "description": "Pure black OLED contrast and Cognitive CPU XR for realistic picture and sound.",
       "price": 1399.0,
       "discount": 10,
       "stockCount": 12,
@@ -740,7 +740,7 @@
       "discount": 10,
       "stockCount": 50,
       "specs": {
-        "Processor": "Intel Core Ultra 7",
+        "CPU": "Intel Core Ultra 7",
         "Display": "14-inch 2.8K OLED",
         "Weight": "1.32 kg",
         "RAM": "16GB",
@@ -757,7 +757,7 @@
       "discount": 5,
       "stockCount": 20,
       "specs": {
-        "Processor": "Snapdragon 8+ Gen 1",
+        "CPU": "Snapdragon 8+ Gen 1",
         "Interface": "Glyph Lights",
         "Screen": "6.7 OLED LTPO",
         "Battery": "4700 mAh",

@@ -7,10 +7,10 @@
     <ClientOnly>
       <ProductCard v-for="product in filteredProducts" :key="product.id" :product />
       <template #placeholder>
-        <ProductCardSkeleton />
+        <SkeletonProductCard />
       </template>
       <template #fallback>
-        <ProductCardSkeleton />
+        <SkeletonProductCard />
       </template>
     </ClientOnly>
   </UPageGrid>

@@ -6,7 +6,7 @@ interface Item {
   price: number;
   discount: number; // Percentage as a number (e.g., 10 for 10%) or distinct amount
   stockCount: number;
-  specs: Record<string, string | number | boolean>;
+  specs: Record<string, string>;
   category: Category;
 }
 

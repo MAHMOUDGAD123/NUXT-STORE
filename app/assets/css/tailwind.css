@@ -77,6 +77,12 @@
     --ui-header-height: --spacing(20);
   }
 
+  @media (prefers-reduced-motion: reduce) {
+    :root {
+      view-transition-name: none;
+    }
+  }
+
   *,
   *::before,
   *::after {
