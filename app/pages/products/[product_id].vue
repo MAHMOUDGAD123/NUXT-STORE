@@ -5,24 +5,20 @@
     title: `Product ${route.params.product_id}`,
   });
 
-  const categoryStore = useCategoryFilterStore();
-  const product = categoryStore.getItemById(route.params.product_id as string);
-
   definePageMeta({
     name: 'product',
     pageHero: 'PRODUCT',
-    pageHeroIcon: 'fa7-solid:basket-shopping',
-    hidePageHero: true,
+    pageHeroIcon: 'line-md:loading-loop',
   });
+
+  const categoryStore = useCategoryFilterStore();
+  const product = categoryStore.getItemById(route.params.product_id as string);
+  route.meta.pageHeroIcon = `${product.icon}`;
 </script>
 
 <template>
   <div>
     <ClientOnly>
-      <PageHeroCard :title="product.category.toUpperCase()" :key="product.id">
-        <UIcon :name="product.icon" />
-      </PageHeroCard>
-
       <template #fallback>loading...</template>
 
       <UCard>

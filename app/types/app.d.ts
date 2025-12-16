@@ -4,6 +4,5 @@ declare module '#app' {
   interface PageMeta {
     pageHero?: Uppercase<keyof CustomRouteMap>;
     pageHeroIcon?: string;
-    hidePageHero?: boolean;
   }
 }

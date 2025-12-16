@@ -15,7 +15,8 @@
     class="page-hero font-saira text-primary bg-secondary-700 light:bg-accented xsm:text-6xl mt-6 h-30 w-full content-center rounded-md text-center text-5xl"
   >
     <slot>
-      {{ title ?? 'TITLE' }}
+      <UIcon v-if="$route.meta.pageHeroIcon" :name="$route.meta.pageHeroIcon" />
+      <div v-else class="text-4xl">{{ title ?? 'TITLE' }}</div>
     </slot>
   </h1>
 </template>
