@@ -3,22 +3,26 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "cross-env NODE_NO_WARNINGS=1 nuxt build",
     "dev": "nuxt dev",
+    "dev:cleanup": "nuxt cleanup && nuxt dev",
     "start": "nuxt start",
     "start:nitro": "cross-env NODE_NO_WARNINGS=1 node ./.output/server/index.mjs",
+    "build": "cross-env NODE_NO_WARNINGS=1 nuxt build",
     "generate": "cross-env NODE_NO_WARNINGS=1 nuxt generate",
+    "analyze": "cross-env NODE_NO_WARNINGS=1 nuxt analyze",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "clean": "rimraf ./.output ./.nuxt",
-    "clean:node_module": "rimraf ./node_modules"
+    "upgrade": "nuxt upgrade",
+    "typecheck": "nuxt typecheck",
+    "cleanup": "nuxt cleanup",
+    "cleanup:modules": "rimraf ./node_modules"
   },
   "dependencies": {
     "@vueuse/core": "^14.1.0",
-    "nuxt": "^4.2.1",
+    "nuxt": "^4.2.2",
     "pinia": "^3.0.4",
     "vue": "^3.5.25",
-    "vue-router": "^4.6.3"
+    "vue-router": "^4.6.4"
   },
   "devDependencies": {
     "@iconify-json/ant-design": "^1.2.5",
@@ -29,20 +33,20 @@
     "@iconify-json/fa7-regular": "^1.2.2",
     "@iconify-json/fa7-solid": "^1.2.3",
     "@iconify-json/line-md": "^1.2.11",
-    "@iconify-json/lucide": "^1.2.79",
+    "@iconify-json/lucide": "^1.2.81",
     "@iconify-json/material-symbols": "^1.2.50",
     "@iconify-json/mdi": "^1.2.3",
     "@iconify-json/mi": "^1.2.2",
     "@iconify-json/ph": "^1.2.2",
     "@iconify-json/qlementine-icons": "^1.2.13",
-    "@iconify-json/simple-icons": "^1.2.61",
+    "@iconify-json/simple-icons": "^1.2.63",
     "@iconify-json/teenyicons": "^1.2.2",
-    "@nuxt/icon": "^2.1.0",
+    "@nuxt/icon": "^2.1.1",
     "@nuxt/image": "^2.0.0",
     "@nuxt/ui": "^4.2.1",
     "@pinia/nuxt": "^0.11.3",
-    "@tailwindcss/postcss": "^4.1.17",
-    "@tailwindcss/vite": "^4.1.17",
+    "@tailwindcss/postcss": "^4.1.18",
+    "@tailwindcss/vite": "^4.1.18",
     "@vueuse/nuxt": "^14.1.0",
     "cross-env": "^10.1.0",
     "nuxt-typed-router": "^4.0.2",
@@ -50,6 +54,11 @@
     "prettier-plugin-tailwindcss": "^0.7.2",
     "rimraf": "^6.1.2",
     "strict-vue-router": "^0.0.7",
-    "tailwindcss": "^4.1.17"
+    "tailwindcss": "^4.1.18"
+  },
+  "pnpm": {
+    "allowedDeprecatedVersions": {
+      "@types/parse-path": "*"
+    }
   }
 }

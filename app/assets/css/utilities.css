@@ -9,6 +9,13 @@
   grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
 }
 
+/* content-visibilty & contain-intrinsic-size */
+@utility cv-auto-* {
+  --place-holder-h: calc(--value(number) * 1px);
+  content-visibility: auto;
+  contain-intrinsic-size: 1px var(--place-holder-h);
+}
+
 @utility important-txt {
   @apply text-primary font-bold;
 }

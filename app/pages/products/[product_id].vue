@@ -12,12 +12,17 @@
     name: 'product',
     pageHero: 'PRODUCT',
     pageHeroIcon: 'fa7-solid:basket-shopping',
+    hidePageHero: true,
   });
 </script>
 
 <template>
   <div>
     <ClientOnly>
+      <PageHeroCard :title="product.category.toUpperCase()" :key="product.id">
+        <UIcon :name="product.icon" />
+      </PageHeroCard>
+
       <template #fallback>loading...</template>
 
       <UCard>

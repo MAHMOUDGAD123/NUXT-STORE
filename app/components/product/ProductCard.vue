@@ -10,7 +10,7 @@
     :title="product.title"
     :description="product.description"
     variant="subtle"
-    class="duration-global hover:shadow-primary transtion-all scale-3d hover:scale-101 hover:shadow-[0_0_0_4px] starting:opacity-0"
+    class="cv-auto-800 duration-global hover:shadow-primary transtion-all scale-3d hover:scale-101 hover:shadow-[0_0_0_4px] starting:opacity-0"
     :ui="{
       container: 'p-2.5 sm:p-2.5',
       header: 'w-full',
