@@ -1,4 +1,4 @@
-interface Item {
+interface Product {
   id: string;
   title: string;
   shortName: string;
@@ -10,12 +10,13 @@ interface Item {
   category: Category;
 }
 
-interface ItemWithIcon extends Item {
-  icon: string;
+interface ProductWithMetaData extends Product {
+  inCart: boolean;
+  inWishlist: boolean;
 }
 
-interface Products {
-  list: Item[];
+interface ProductsStore {
+  list: ProductWithMetaData[];
   itemCount: number; // Should be 50
   totalStockCount: number; // Sum of all item.stockCount
   categories: Category[];

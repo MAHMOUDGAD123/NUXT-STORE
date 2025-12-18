@@ -1,7 +1,9 @@
 <script setup lang="ts">
   defineProps<{
-    product: ItemWithIcon;
+    product: ProductWithMetaData;
   }>();
+
+  const { getCategory } = useCategoryFilterStore();
 </script>
 
 <template>
@@ -10,13 +12,12 @@
     :title="product.title"
     :description="product.description"
     variant="subtle"
-    class="cv-auto-800 duration-global hover:shadow-primary transtion-all scale-3d hover:scale-101 hover:shadow-[0_0_0_4px] starting:opacity-0"
+    class="cv-auto-800 hover:shadow-primary transtion-all duration-global scale-3d hover:scale-101 hover:shadow-[0_0_0_4px] starting:scale-95 starting:opacity-0"
     :ui="{
       container: 'p-2.5 sm:p-2.5',
       header: 'w-full',
       footer: 'w-full flex flex-col gap-5 items-center',
       title: 'font-bold text-[1.15rem]',
-      description: 'text-accented text-sm',
     }"
   >
     <template #header>
@@ -39,47 +40,43 @@
     </template>
 
     <template #leading>
-      <UBadge class="text-center" :icon="product.icon" size="lg" />
+      <div class="flex items-center gap-3">
+        <UBadge class="text-center" :icon="getCategory(product.category, 'icon')" size="lg" />
+        <UBadge
+          class="text-center"
+          size="lg"
+          :label="`${product.stockCount} left`"
+          variant="soft"
+        />
+      </div>
     </template>
 
     <template #footer>
-      <div class="flex w-full flex-col content-end gap-2 *:w-fit **:text-xl">
-        <UBadge
-          :label="product.price"
-          size="lg"
-          trailing-icon="fa7-solid:dollar"
-          variant="outline"
-          color="neutral"
-          class="gap-0"
-          :ui="{
-            label: `${product.discount === 0 ? '' : 'line-through'}`,
-          }"
-        />
-        <div class="flex gap-2">
-          <UBadge
-            v-if="product.discount !== 0"
-            :label="(product.price - product.discount) >>> 0"
-            size="lg"
-            trailing-icon="fa7-solid:dollar"
-            variant="subtle"
-            class="gap-0"
-          />
-
-          <UBadge v-if="product.discount !== 0" size="lg" variant="subtle">
-            {{ '-' + Math.ceil((product.discount / product.price) * 100) + '%' }}
-          </UBadge>
-        </div>
-      </div>
+      <ProductPrice :product />
 
       <div class="ms-auto flex gap-3">
-        <UTooltip :delay-duration="0" :content="{ side: 'top' }">
-          <UButton icon="fa7-solid:cart-plus" size="xl" variant="subtle" />
-          <template #content>ADD TO CART</template>
+        <UTooltip>
+          <UButton
+            :icon="
+              product.inCart
+                ? 'streamline-plump:shopping-cart-add-solid'
+                : 'streamline-plump:shopping-cart-add-remix'
+            "
+            size="xl"
+            variant="subtle"
+          />
+          <template #content>{{ product.inCart ? 'REMOVE FROM CART' : 'ADD TO CART' }}</template>
         </UTooltip>
 
-        <UTooltip :delay-duration="0" :content="{ side: 'top' }">
-          <UButton icon="fa7-solid:heart" size="xl" variant="subtle" />
-          <template #content>ADD TO WISHLIST</template>
+        <UTooltip>
+          <UButton
+            :icon="product.inWishlist ? 'fa7-solid:heart' : 'fa7-regular:heart'"
+            size="xl"
+            variant="subtle"
+          />
+          <template #content>{{
+            product.inWishlist ? 'REMOVE FROM WISHLIST' : 'ADD TO WISHLIST'
+          }}</template>
         </UTooltip>
       </div>
     </template>

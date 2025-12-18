@@ -11,9 +11,10 @@
     pageHeroIcon: 'line-md:loading-loop',
   });
 
-  const categoryStore = useCategoryFilterStore();
-  const product = categoryStore.getItemById(route.params.product_id as string);
-  route.meta.pageHeroIcon = `${product.icon}`;
+  const productsStore = useProductStore();
+  const { getCategory } = useCategoryFilterStore();
+  const product = productsStore.getProductById(route.params.product_id as string);
+  route.meta.pageHeroIcon = `${getCategory(product.category, 'icon')}`;
 
   interface ActionButton {
     icon: string;
@@ -21,18 +22,20 @@
     action: () => void;
   }
 
-  const actionButtons: ActionButton[] = [
+  const actionButtons = computed<ActionButton[]>(() => [
     {
-      icon: 'fa7-solid:cart-plus',
-      tooltip: 'ADD TO CART',
+      icon: product.inCart
+        ? 'streamline-plump:shopping-cart-add-solid'
+        : 'streamline-plump:shopping-cart-add-remix',
+      tooltip: product.inCart ? 'REMOVE FROM CART' : 'ADD TO CART',
       action: () => {},
     },
     {
-      icon: 'fa7-solid:heart',
-      tooltip: 'ADD TO WISHLIST',
+      icon: product.inWishlist ? 'fa7-solid:heart' : 'fa7-regular:heart',
+      tooltip: product.inWishlist ? 'REMOVE FROM WISHLIST' : 'ADD TO WISHLIST',
       action: () => {},
     },
-  ];
+  ]);
 </script>
 
 <template>
@@ -49,20 +52,21 @@
         <template #header>
           <div class="flex justify-center gap-3">
             <UTooltip v-for="actionBtn in actionButtons">
-              <UButton
-                :icon="actionBtn.icon"
-                size="xl"
-                variant="subtle"
-                @click="actionBtn.action"
-              />
+              <UButton variant="subtle" class="text-3xl" @click="actionBtn.action">
+                <UIcon :name="actionBtn.icon" />
+              </UButton>
               <template #content>{{ actionBtn.tooltip }}</template>
             </UTooltip>
           </div>
         </template>
 
         <template #default>
+          <UBadge variant="soft" :label="`${product.stockCount} left`" size="xl" class="mb-3" />
+
           <h2 class="mb-5 text-2xl font-extrabold">{{ product?.title }}</h2>
-          <p class="text-(--text-color-muted)">{{ product?.description }}</p>
+          <p class="mb-5 text-(--text-color-muted)">{{ product?.description }}</p>
+
+          <ProductPrice :product size="xl" />
         </template>
 
         <template #footer>

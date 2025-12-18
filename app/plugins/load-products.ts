@@ -1,4 +1,4 @@
 export default defineNuxtPlugin(async () => {
   const productStore = useProductStore();
-  await productStore.loadData();
+  await productStore.loadProducts();
 });

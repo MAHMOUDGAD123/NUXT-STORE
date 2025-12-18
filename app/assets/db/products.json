@@ -5,8 +5,8 @@
       "title": "Apple MacBook Pro 16-inch M3 Max",
       "shortName": "MacBook Pro M3",
       "description": "The most powerful MacBook Pro ever, featuring the M3 Max chip for extreme performance and a stunning Liquid Retina XDR display.",
-      "price": 3499.0,
-      "discount": 5,
+      "price": 3500,
+      "discount": 10,
       "stockCount": 25,
       "specs": {
         "CPU": "Apple M3 Max",
@@ -22,7 +22,7 @@
       "title": "Dell XPS 15 OLED Touch Laptop",
       "shortName": "Dell XPS 15",
       "description": "High-performance laptop with a captivating OLED InfinityEdge display and 13th Gen Intel Core processors.",
-      "price": 2299.0,
+      "price": 2300,
       "discount": 10,
       "stockCount": 40,
       "specs": {
@@ -39,7 +39,7 @@
       "title": "ASUS ROG Strix Scar 18 Gaming Laptop",
       "shortName": "ROG Strix 18",
       "description": "Dominate the competition with the ROG Strix Scar 18, featuring a massive 18-inch Nebula Display.",
-      "price": 2899.99,
+      "price": 2900,
       "discount": 0,
       "stockCount": 15,
       "specs": {
@@ -56,7 +56,7 @@
       "title": "Lenovo ThinkPad X1 Carbon Gen 11",
       "shortName": "ThinkPad X1",
       "description": "Ultralight and durable, this business laptop offers heavy-duty performance in a featherweight chassis.",
-      "price": 1899.0,
+      "price": 1900,
       "discount": 15,
       "stockCount": 60,
       "specs": {
@@ -73,8 +73,8 @@
       "title": "HP OMEN 45L Gaming Desktop",
       "shortName": "HP OMEN 45L",
       "description": "Designed for gaming performance with the patented OMEN Cryo Chamber cooling system.",
-      "price": 2499.99,
-      "discount": 8,
+      "price": 2500,
+      "discount": 10,
       "stockCount": 12,
       "specs": {
         "CPU": "Intel Core i7-13700K",
@@ -90,7 +90,7 @@
       "title": "Apple Mac Mini M2 Pro",
       "shortName": "Mac Mini M2",
       "description": "Workhorse performance in a compact footprint. Ideal for developers and creatives.",
-      "price": 1299.0,
+      "price": 1300,
       "discount": 0,
       "stockCount": 55,
       "specs": {
@@ -107,7 +107,7 @@
       "title": "NVIDIA GeForce RTX 4090 Founder's Edition",
       "shortName": "RTX 4090",
       "description": "The ultimate GeForce GPU. It brings an enormous leap in performance, efficiency, and AI-powered graphics.",
-      "price": 1599.0,
+      "price": 1600,
       "discount": 0,
       "stockCount": 5,
       "specs": {
@@ -124,7 +124,7 @@
       "title": "AMD Ryzen 9 7950X3D CPU",
       "shortName": "Ryzen 7950X3D",
       "description": "The dominant gaming processor with AMD 3D V-Cache technology for low latency.",
-      "price": 699.0,
+      "price": 700,
       "discount": 12,
       "stockCount": 30,
       "specs": {
@@ -141,12 +141,12 @@
       "title": "Samsung 990 PRO NVMe SSD 2TB",
       "shortName": "Samsung 990 Pro",
       "description": "Blistering speed, endless victory. The ultimate SSD for heavy gaming and video editing.",
-      "price": 179.99,
+      "price": 180,
       "discount": 20,
       "stockCount": 100,
       "specs": {
         "Capacity": "2TB",
-        "Interface": "PCIe 4.0",
+        "Interface": "PCIe 4",
         "Read Speed": "7450 MB/s",
         "Write Speed": "6900 MB/s",
         "Form Factor": "M.2 2280"
@@ -158,8 +158,8 @@
       "title": "Corsair Vengeance RGB DDR5 32GB RAM",
       "shortName": "Corsair RAM 32GB",
       "description": "Push the limits of your system with DDR5 memory that unlocks higher frequencies.",
-      "price": 129.99,
-      "discount": 5,
+      "price": 130,
+      "discount": 10,
       "stockCount": 75,
       "specs": {
         "Type": "DDR5",
@@ -175,7 +175,7 @@
       "title": "SanDisk Extreme Portable SSD V2 1TB",
       "shortName": "SanDisk SSD 1TB",
       "description": "Rugged storage that resists water and dust, perfect for content creators on the go.",
-      "price": 99.0,
+      "price": 100,
       "discount": 15,
       "stockCount": 80,
       "specs": {
@@ -192,7 +192,7 @@
       "title": "WD_BLACK 4TB P10 Game Drive",
       "shortName": "WD Game Drive",
       "description": "Portable external hard drive built specifically for gamers to expand console or pc storage.",
-      "price": 119.0,
+      "price": 120,
       "discount": 10,
       "stockCount": 45,
       "specs": {
@@ -209,7 +209,7 @@
       "title": "Apple iPhone 15 Pro Max",
       "shortName": "iPhone 15 Pro Max",
       "description": "Forged in titanium. Features the game-changing A17 Pro chip and the most advanced iPhone camera system.",
-      "price": 1199.0,
+      "price": 1200,
       "discount": 0,
       "stockCount": 50,
       "specs": {
@@ -226,8 +226,8 @@
       "title": "Samsung Galaxy S24 Ultra",
       "shortName": "Galaxy S24 Ultra",
       "description": "Unleash new ways to create, connect, and more with Galaxy AI on the S24 Ultra.",
-      "price": 1299.99,
-      "discount": 5,
+      "price": 1300,
+      "discount": 10,
       "stockCount": 45,
       "specs": {
         "Screen": "6.8-inch QHD+ AMOLED",
@@ -243,7 +243,7 @@
       "title": "Google Pixel 8 Pro",
       "shortName": "Pixel 8 Pro",
       "description": "The all-pro phone engineered by Google. It's super fast, secure, and features the best Pixel Camera yet.",
-      "price": 999.0,
+      "price": 1000,
       "discount": 15,
       "stockCount": 35,
       "specs": {
@@ -260,7 +260,7 @@
       "title": "OnePlus 12",
       "shortName": "OnePlus 12",
       "description": "Smooth beyond belief. A flagship experience with ultra-fast charging and Hasselblad camera system.",
-      "price": 799.99,
+      "price": 800,
       "discount": 0,
       "stockCount": 20,
       "specs": {
@@ -277,7 +277,7 @@
       "title": "Anker 737 Power Bank (PowerCore 24K)",
       "shortName": "Anker 737",
       "description": "Ultra-powerful two-way charging. Capable of charging a laptop and phone simultaneously.",
-      "price": 149.99,
+      "price": 150,
       "discount": 20,
       "stockCount": 65,
       "specs": {
@@ -294,7 +294,7 @@
       "title": "Apple MagSafe Charger",
       "shortName": "MagSafe Charger",
       "description": "The MagSafe Charger makes wireless charging a snap for iPhone 12 and later models.",
-      "price": 39.0,
+      "price": 39,
       "discount": 0,
       "stockCount": 150,
       "specs": {
@@ -311,7 +311,7 @@
       "title": "Samsung Galaxy SmartTag2",
       "shortName": "SmartTag2",
       "description": "Keep track of your valuables with an extended battery life and durable design.",
-      "price": 29.99,
+      "price": 29,
       "discount": 10,
       "stockCount": 200,
       "specs": {
@@ -328,8 +328,8 @@
       "title": "Apple iPad Pro 12.9-inch (6th Gen)",
       "shortName": "iPad Pro 12.9",
       "description": "The ultimate iPad experience with M2 chip, 5G capability, and mini-LED display.",
-      "price": 1099.0,
-      "discount": 5,
+      "price": 1100,
+      "discount": 10,
       "stockCount": 30,
       "specs": {
         "Display": "Liquid Retina XDR",
@@ -345,7 +345,7 @@
       "title": "Samsung Galaxy Tab S9 Ultra",
       "shortName": "Tab S9 Ultra",
       "description": "The largest Dynamic AMOLED 2X display on a tablet. Water and dust resistant.",
-      "price": 1199.99,
+      "price": 1200,
       "discount": 10,
       "stockCount": 25,
       "specs": {
@@ -362,7 +362,7 @@
       "title": "Microsoft Surface Pro 9",
       "shortName": "Surface Pro 9",
       "description": "Tablet portability and laptop performance. The 2-in-1 that defined the category.",
-      "price": 999.99,
+      "price": 1000,
       "discount": 12,
       "stockCount": 35,
       "specs": {
@@ -379,7 +379,7 @@
       "title": "LG C3 Series 65-Inch OLED evo TV",
       "shortName": "LG OLED C3",
       "description": "The best all-around OLED TV. Perfect blacks, infinite contrast, and great for gaming.",
-      "price": 1699.0,
+      "price": 1700,
       "discount": 20,
       "stockCount": 18,
       "specs": {
@@ -396,7 +396,7 @@
       "title": "Samsung Odyssey G9 49\" OLED Monitor",
       "shortName": "Odyssey G9 OLED",
       "description": "A massive ultrawide curved gaming monitor with 0.03ms response time.",
-      "price": 1199.99,
+      "price": 1200,
       "discount": 15,
       "stockCount": 10,
       "specs": {
@@ -413,8 +413,8 @@
       "title": "Dell UltraSharp 27 4K USB-C Hub Monitor",
       "shortName": "Dell U2723QE",
       "description": "Be your most productive on a 27-inch monitor with brilliant color and contrast with IPS Black technology.",
-      "price": 624.99,
-      "discount": 5,
+      "price": 624,
+      "discount": 10,
       "stockCount": 40,
       "specs": {
         "Resolution": "3840 x 2160",
@@ -430,7 +430,7 @@
       "title": "Sony Bravia XR A80L 55-inch OLED",
       "shortName": "Sony A80L",
       "description": "Pure black OLED contrast and Cognitive CPU XR for realistic picture and sound.",
-      "price": 1399.0,
+      "price": 1400,
       "discount": 10,
       "stockCount": 12,
       "specs": {
@@ -447,7 +447,7 @@
       "title": "Sony WH-1000XM5 Wireless headphones",
       "shortName": "Sony XM5",
       "description": "Industry-leading noise cancellation with two processors and eight microphones.",
-      "price": 399.99,
+      "price": 400,
       "discount": 12,
       "stockCount": 85,
       "specs": {
@@ -464,7 +464,7 @@
       "title": "Bose QuietComfort Ultra headphones",
       "shortName": "Bose QC Ultra",
       "description": "World-class noise cancellation meets breakthrough spatial audio for immersive listening.",
-      "price": 429.0,
+      "price": 429,
       "discount": 0,
       "stockCount": 60,
       "specs": {
@@ -481,7 +481,7 @@
       "title": "Sennheiser Momentum 4 Wireless",
       "shortName": "Momentum 4",
       "description": "Audiophile-inspired sound system with an incredible 60-hour battery life.",
-      "price": 349.95,
+      "price": 350,
       "discount": 25,
       "stockCount": 40,
       "specs": {
@@ -498,7 +498,7 @@
       "title": "Apple airpods Pro (2nd Generation)",
       "shortName": "airpods Pro 2",
       "description": "Rebuilt from the sound up. Up to 2x more Active Noise Cancellation and USB-C charging.",
-      "price": 249.0,
+      "price": 249,
       "discount": 20,
       "stockCount": 150,
       "specs": {
@@ -515,8 +515,8 @@
       "title": "Apple airpods Max",
       "shortName": "airpods Max",
       "description": "A perfect balance of exhilarating high-fidelity audio and the effortless magic of airpods.",
-      "price": 549.0,
-      "discount": 5,
+      "price": 549,
+      "discount": 10,
       "stockCount": 25,
       "specs": {
         "Design": "Over-Ear",
@@ -532,7 +532,7 @@
       "title": "Sony Alpha 7 IV Mirrorless Camera",
       "shortName": "Sony A7 IV",
       "description": "The hybrid camera standard. 33MP sensor and 4K 60p video recording.",
-      "price": 2498.0,
+      "price": 2498,
       "discount": 0,
       "stockCount": 10,
       "specs": {
@@ -549,8 +549,8 @@
       "title": "Canon EOS R6 Mark II",
       "shortName": "Canon R6 II",
       "description": "Master stills and motion. High speed shooting up to 40 fps and advanced subject detection.",
-      "price": 2299.0,
-      "discount": 5,
+      "price": 2300,
+      "discount": 10,
       "stockCount": 14,
       "specs": {
         "Sensor": "24.2MP CMOS",
@@ -566,14 +566,14 @@
       "title": "GoPro HERO12 Black",
       "shortName": "GoPro HERO12",
       "description": "Incredible image quality, even better HyperSmooth video stabilization, and huge battery boost.",
-      "price": 399.99,
+      "price": 400,
       "discount": 10,
       "stockCount": 65,
       "specs": {
         "Resolution": "5.3K60 Video",
         "Photo": "27MP",
         "Waterproof": "33ft (10m)",
-        "Stabilization": "HyperSmooth 6.0",
+        "Stabilization": "HyperSmooth 6",
         "Screen": "Front + Rear LCD"
       },
       "category": "cameras"
@@ -583,7 +583,7 @@
       "title": "Fujifilm X100VI",
       "shortName": "Fuji X100VI",
       "description": "The latest iteration of the iconic compact camera. Features 40MP sensor and IBIS.",
-      "price": 1599.0,
+      "price": 1600,
       "discount": 0,
       "stockCount": 3,
       "specs": {
@@ -600,7 +600,7 @@
       "title": "Sonos Era 300 Wireless Speaker",
       "shortName": "Sonos Era 300",
       "description": "A revolutionary speaker built for spatial audio with support for Dolby Atmos.",
-      "price": 449.0,
+      "price": 449,
       "discount": 0,
       "stockCount": 35,
       "specs": {
@@ -617,7 +617,7 @@
       "title": "JBL Flip 6 Portable Bluetooth Speaker",
       "shortName": "JBL Flip 6",
       "description": "Bold sound for every adventure. Waterproof and dustproof.",
-      "price": 129.95,
+      "price": 130,
       "discount": 23,
       "stockCount": 120,
       "specs": {
@@ -634,7 +634,7 @@
       "title": "Bose SoundLink Flex",
       "shortName": "Bose Flex",
       "description": "State-of-the-art design tailored for travel. Clear sound regardless of orientation.",
-      "price": 149.0,
+      "price": 149,
       "discount": 10,
       "stockCount": 90,
       "specs": {
@@ -650,9 +650,9 @@
       "id": "pc-039",
       "title": "Corsair RM1000e Power Supply",
       "shortName": "Corsair PSU",
-      "description": "Fully modular, low-noise ATX power supply with ATX 3.0 compatibility.",
-      "price": 179.99,
-      "discount": 5,
+      "description": "Fully modular, low-noise ATX power supply with ATX 3 compatibility.",
+      "price": 179,
+      "discount": 10,
       "stockCount": 45,
       "specs": {
         "Wattage": "1000W",
@@ -668,7 +668,7 @@
       "title": "NZXT H9 Flow Case",
       "shortName": "NZXT H9",
       "description": "Dual-chamber mid-tower airflow case with seamless glass panel for showcasing components.",
-      "price": 159.99,
+      "price": 159,
       "discount": 0,
       "stockCount": 20,
       "specs": {
@@ -685,8 +685,8 @@
       "title": "Logitech MX Master 3S Mouse",
       "shortName": "MX Master 3S",
       "description": "An icon remastered. 8K DPI tracking and Quiet Click technology.",
-      "price": 99.99,
-      "discount": 5,
+      "price": 99,
+      "discount": 10,
       "stockCount": 110,
       "specs": {
         "DPI": "8000",
@@ -702,7 +702,7 @@
       "title": "Keychron Q1 Pro Mechanical Keyboard",
       "shortName": "Keychron Q1 Pro",
       "description": "QMK/VIA wireless custom mechanical keyboard with a full aluminum body.",
-      "price": 199.0,
+      "price": 200,
       "discount": 0,
       "stockCount": 25,
       "specs": {
@@ -719,7 +719,7 @@
       "title": "Seagate IronWolf 8TB NAS Internal HDD",
       "shortName": "IronWolf 8TB",
       "description": "Built for NAS environments. Tough, ready, and scalable 24/7 performance.",
-      "price": 189.99,
+      "price": 189,
       "discount": 15,
       "stockCount": 40,
       "specs": {
@@ -736,7 +736,7 @@
       "title": "Acer Swift Go 14",
       "shortName": "Acer Swift Go",
       "description": "Lightweight OLED laptop perfect for students and professionals on the move.",
-      "price": 899.99,
+      "price": 900,
       "discount": 10,
       "stockCount": 50,
       "specs": {
@@ -752,9 +752,9 @@
       "id": "sp-045",
       "title": "Nothing Phone (2)",
       "shortName": "Nothing Phone 2",
-      "description": "Iconic Glyph Interface. New Nothing OS 2.0. Uniquely designed smartphone.",
-      "price": 699.0,
-      "discount": 5,
+      "description": "Iconic Glyph Interface. New Nothing OS 2. Uniquely designed smartphone.",
+      "price": 700,
+      "discount": 10,
       "stockCount": 20,
       "specs": {
         "CPU": "Snapdragon 8+ Gen 1",
@@ -770,7 +770,7 @@
       "title": "Amazon Fire HD 10 Tablet",
       "shortName": "Fire HD 10",
       "description": "Made for entertainment. 10.1-inch 1080p Full HD display and long battery life.",
-      "price": 139.99,
+      "price": 139,
       "discount": 25,
       "stockCount": 300,
       "specs": {
@@ -787,7 +787,7 @@
       "title": "TCL 65-Inch QM8 QLED Mini-LED TV",
       "shortName": "TCL QM8",
       "description": "Flagship 4K Mini-LED TV with incredible brightness and local dimming zones.",
-      "price": 1199.99,
+      "price": 1200,
       "discount": 15,
       "stockCount": 22,
       "specs": {
@@ -804,7 +804,7 @@
       "title": "Marshall Stanmore III Bluetooth Speaker",
       "shortName": "Marshall Stanmore",
       "description": "Legendary design with a wide soundstage that re-engineers the home immersion experience.",
-      "price": 379.0,
+      "price": 379,
       "discount": 0,
       "stockCount": 15,
       "specs": {
@@ -821,7 +821,7 @@
       "title": "DJI Mini 4 Pro Drone",
       "shortName": "DJI Mini 4 Pro",
       "description": "Mini to the Max. Weighs under 249g with omnidirectional obstacle sensing.",
-      "price": 759.0,
+      "price": 759,
       "discount": 0,
       "stockCount": 28,
       "specs": {
@@ -838,7 +838,7 @@
       "title": "Audio-Technica ATH-M50x",
       "shortName": "ATH-M50x",
       "description": "Professional monitor headphones, critically acclaimed for sonic performance.",
-      "price": 169.0,
+      "price": 169,
       "discount": 15,
       "stockCount": 200,
       "specs": {

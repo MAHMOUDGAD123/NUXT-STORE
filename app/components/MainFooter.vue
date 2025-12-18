@@ -41,7 +41,7 @@
     <USeparator
       :orientation="isSmallScreen ? 'horizontal' : 'vertical'"
       color="neutral"
-      class="xsm:w-1 h-5 w-[100px] transition-colors"
+      class="xsm:w-1 h-5 w-25 transition-colors"
     />
 
     <div class="flex flex-wrap gap-1">

@@ -6,15 +6,11 @@
 <template>
   <ClientOnly>
     <template #placeholder>
-      <div class="flex w-full flex-col gap-3 px-2">
-        <USkeleton v-for="i in categoryFilterStore.filterOptions.length" class="h-14" />
-      </div>
+      <SkeletonProductCategoryFilter />
     </template>
 
     <template #fallback>
-      <div class="flex w-full flex-col gap-3 px-2">
-        <USkeleton v-for="i in categoryFilterStore.filterOptions.length" class="h-14" />
-      </div>
+      <SkeletonProductCategoryFilter />
     </template>
 
     <URadioGroup

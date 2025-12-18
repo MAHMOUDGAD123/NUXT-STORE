@@ -11,7 +11,7 @@
     </template>
 
     <template #default>
-      <USkeleton class="mb-5 h-9 w-120" />
+      <USkeleton class="mb-5 h-8 w-120" />
       <USkeleton class="mb-3 h-5 w-200" />
       <USkeleton class="h-5 w-70" />
     </template>
