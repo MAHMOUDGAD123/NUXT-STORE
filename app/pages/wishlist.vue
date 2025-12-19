@@ -7,9 +7,14 @@
     name: 'wishlist',
     pageHero: 'WISHLIST',
     pageHeroIcon: 'fa7-solid:heart',
+    layout: 'filter-layout',
   });
+
+  const wishlistStore = useWishlistStore();
+  const { wishlistProducts } = storeToRefs(wishlistStore);
+  const emptyWishlist = computed(() => wishlistProducts.value.length === 0);
 </script>
 
 <template>
-  <div class="flex flex-col items-center gap-4"></div>
+  <ShopCardGrid :productsList="wishlistProducts" :isEmpty="emptyWishlist" />
 </template>

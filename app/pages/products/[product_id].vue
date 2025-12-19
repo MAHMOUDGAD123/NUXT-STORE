@@ -11,31 +11,10 @@
     pageHeroIcon: 'line-md:loading-loop',
   });
 
-  const productsStore = useProductStore();
+  const productsStore = useProductsStore();
   const { getCategory } = useCategoryFilterStore();
   const product = productsStore.getProductById(route.params.product_id as string);
   route.meta.pageHeroIcon = `${getCategory(product.category, 'icon')}`;
-
-  interface ActionButton {
-    icon: string;
-    tooltip: string;
-    action: () => void;
-  }
-
-  const actionButtons = computed<ActionButton[]>(() => [
-    {
-      icon: product.inCart
-        ? 'streamline-plump:shopping-cart-add-solid'
-        : 'streamline-plump:shopping-cart-add-remix',
-      tooltip: product.inCart ? 'REMOVE FROM CART' : 'ADD TO CART',
-      action: () => {},
-    },
-    {
-      icon: product.inWishlist ? 'fa7-solid:heart' : 'fa7-regular:heart',
-      tooltip: product.inWishlist ? 'REMOVE FROM WISHLIST' : 'ADD TO WISHLIST',
-      action: () => {},
-    },
-  ]);
 </script>
 
 <template>
@@ -50,14 +29,7 @@
 
       <UCard class="my-7">
         <template #header>
-          <div class="flex justify-center gap-3">
-            <UTooltip v-for="actionBtn in actionButtons">
-              <UButton variant="subtle" class="text-3xl" @click="actionBtn.action">
-                <UIcon :name="actionBtn.icon" />
-              </UButton>
-              <template #content>{{ actionBtn.tooltip }}</template>
-            </UTooltip>
-          </div>
+          <ProductActions :product />
         </template>
 
         <template #default>

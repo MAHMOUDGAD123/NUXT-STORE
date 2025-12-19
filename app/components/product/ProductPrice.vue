@@ -13,9 +13,11 @@
   <div class="flex w-full flex-col content-end items-start gap-2">
     <UFieldGroup>
       <UBadge
-        :label="hasDicount ? `-${Math.ceil((product.discount / product.price) * 100)}%` : 'Price'"
+        :label="hasDicount ? `-${product.discount}%` : 'Price'"
         :color="hasDicount ? 'primary' : 'neutral'"
         :size
+        class="font-bold"
+        :class="{ 'light:bg-accented light:text-default': !hasDicount }"
       />
       <UBadge
         :label="product.price"
@@ -28,11 +30,20 @@
       />
       <UBadge
         v-if="hasDicount"
-        :label="hasDicount ? `${(product.price - product.discount) >>> 0}` : 'none'"
+        :label="
+          hasDicount
+            ? `${(product.price - product.price * (product.discount / 100)) >>> 0}`
+            : 'none'
+        "
         :size
         variant="subtle"
       />
-      <UBadge icon="fa7-solid:dollar" :size :color="hasDicount ? 'primary' : 'neutral'" />
+      <UBadge
+        icon="fa7-solid:dollar"
+        :size
+        :color="hasDicount ? 'primary' : 'neutral'"
+        class="light:bg-accented light:text-default"
+      />
     </UFieldGroup>
   </div>
 </template>

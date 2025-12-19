@@ -6,13 +6,15 @@ interface FilterOptionsMapProps {
   icon: string;
 }
 
+type FilterCategoryLookup = Record<Category, ProductWithMetaData[]>;
+
 export const useCategoryFilterStore = defineStore('categoryFilter', ({ action }) => {
   const defaultValue: FilterCategory = 'all';
   const currentValue = skipHydrate(
     useSessionStorage<FilterCategory>('__nuxt_store_filter_cat__', defaultValue),
   );
-  const productStore = useProductStore();
-  const { productsData } = storeToRefs(productStore);
+  const productsStore = useProductsStore();
+  const { productsData } = storeToRefs(productsStore);
 
   const _filterMetaDataMap: Record<
     FilterCategory,
@@ -92,7 +94,7 @@ export const useCategoryFilterStore = defineStore('categoryFilter', ({ action })
   );
 
   const _buildCategorylookup = action(() => {
-    const lookup = {} as Record<Category, ProductWithMetaData[]>;
+    const lookup = {} as FilterCategoryLookup;
     productsData.value.list.forEach((product) => {
       if (lookup[product.category]) {
         lookup[product.category].push(product);
@@ -100,10 +102,10 @@ export const useCategoryFilterStore = defineStore('categoryFilter', ({ action })
         lookup[product.category] = [product];
       }
     });
-    return lookup as Record<Category, ProductWithMetaData[]>;
+    return lookup as FilterCategoryLookup;
   });
 
-  const _productCategoryLookup: Record<Category, ProductWithMetaData[]> = _buildCategorylookup();
+  const _productCategoryLookup: FilterCategoryLookup = _buildCategorylookup();
 
   const filteredProducts = computed(() =>
     currentValue.value === 'all'

@@ -1,6 +1,8 @@
 <script setup lang="ts">
   import type { NavigationMenuItem } from '@nuxt/ui';
 
+  type USize = 'sm' | 'xl' | 'xs' | 'md' | 'lg';
+
   // Links
   const NavItems: NavigationMenuItem[] = [
     {
@@ -20,10 +22,22 @@
     },
   ];
 
-  // Data
+  // theme & UI
   const themeStore = useThemeStore();
   const { theme } = storeToRefs(themeStore);
-  const iconSize: 'sm' | 'xl' | 'xs' | 'md' | 'lg' = 'xl';
+  const iconSize: USize = 'xl';
+
+  // Wishlist
+  const { wishlistProducts } = storeToRefs(useWishlistStore());
+  const wishlistSize = computed(() => wishlistProducts.value.length);
+  const wishlistSizeDisplay = computed(() =>
+    wishlistSize.value > 9 ? '+9' : `${wishlistSize.value}`,
+  );
+
+  // Cart
+  const { cartItems } = storeToRefs(useCartStore());
+  const cartSize = computed(() => cartItems.value.length);
+  const cartSizeDisplay = computed(() => (cartSize.value > 9 ? '+9' : `${cartSize.value}`));
 </script>
 
 <template>
@@ -74,63 +88,69 @@
 
     <template #right>
       <ClientOnly>
-        <UChip
-          text="+3"
-          size="3xl"
-          :ui="{ base: 'p-2' }"
-          :show="$route.name !== 'wishlist'"
-          position="top-left"
-        >
-          <UButton
-            :to="{ name: 'wishlist' }"
-            variant="ghost"
-            :size="iconSize"
-            color="neutral"
-            :icon="$route.name === 'wishlist' ? 'fa7-solid:heart' : 'fa7-regular:heart'"
-            class="hover:text-primary focus-visible:text-primary"
-            :class="{ 'text-primary': $route.name === 'wishlist' }"
+        <UTooltip text="WISHLIST">
+          <UChip
+            :text="wishlistSizeDisplay"
+            size="3xl"
+            :ui="{ base: 'p-2' }"
+            :show="wishlistSize !== 0"
+            position="top-left"
           >
-          </UButton>
-        </UChip>
+            <UButton
+              :to="{ name: 'wishlist' }"
+              variant="ghost"
+              :size="iconSize"
+              color="neutral"
+              :icon="$route.name === 'wishlist' ? 'fa7-solid:heart' : 'fa7-regular:heart'"
+              class="hover:text-primary focus-visible:text-primary"
+              :class="{ 'text-primary': $route.name === 'wishlist' }"
+            >
+            </UButton>
+          </UChip>
+        </UTooltip>
         <template #fallback>
           <UButton icon="line-md:heart" variant="ghost" :size="iconSize" color="neutral" />
         </template>
       </ClientOnly>
 
       <ClientOnly>
-        <UChip
-          text="+9"
-          size="3xl"
-          :ui="{ base: 'p-2' }"
-          :show="$route.name !== 'cart'"
-          position="top-left"
-        >
-          <UButton
-            :to="{ name: 'cart' }"
-            variant="ghost"
-            :size="iconSize"
-            color="neutral"
-            :icon="$route.name === 'cart' ? 'mdi:cart' : 'mdi:cart-outline'"
-            class="hover:text-primary focus-visible:text-primary"
-            :class="{ 'text-primary': $route.name === 'cart' }"
+        <UTooltip text="CART">
+          <UChip
+            :text="cartSizeDisplay"
+            :show="cartSize !== 0"
+            size="3xl"
+            :ui="{ base: 'p-2' }"
+            position="top-left"
           >
-          </UButton>
-        </UChip>
+            <UButton
+              :to="{ name: 'cart' }"
+              variant="ghost"
+              :size="iconSize"
+              color="neutral"
+              :icon="$route.name === 'cart' ? 'mdi:cart' : 'mdi:cart-outline'"
+              class="hover:text-primary focus-visible:text-primary"
+              :class="{ 'text-primary': $route.name === 'cart' }"
+            >
+            </UButton>
+          </UChip>
+        </UTooltip>
         <template #fallback>
           <UButton icon="mdi:cart-outline" variant="ghost" :size="iconSize" color="neutral" />
         </template>
       </ClientOnly>
 
       <ClientOnly>
-        <UButton
-          ref="themeToggleBtn"
-          :size="iconSize"
-          variant="ghost"
-          color="neutral"
-          :icon="theme === 'dark' ? 'lucide:moon' : 'ph:sun-bold'"
-          class="hover:text-primary focus-visible:text-primary"
-          @click="themeStore.toggleTheme"
-        />
+        <UTooltip :text="theme.toUpperCase()">
+          <UButton
+            ref="themeToggleBtn"
+            :size="iconSize"
+            variant="ghost"
+            color="neutral"
+            :icon="theme === 'dark' ? 'lucide:moon' : 'ph:sun-bold'"
+            class="hover:text-primary focus-visible:text-primary"
+            @click="themeStore.toggleTheme"
+          />
+        </UTooltip>
         <template #fallback>
           <UButton loading variant="ghost" :size="iconSize" color="neutral" />
         </template>

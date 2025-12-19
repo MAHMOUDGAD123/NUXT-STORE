@@ -12,7 +12,7 @@
     :title="product.title"
     :description="product.description"
     variant="subtle"
-    class="cv-auto-800 hover:shadow-primary transtion-all duration-global scale-3d hover:scale-101 hover:shadow-[0_0_0_4px] starting:scale-95 starting:opacity-0"
+    class="cv-auto-800 hover:shadow-primary transtion-all duration-global scale-3d hover:scale-101 hover:shadow-[0_0_3px_3px] starting:scale-95 starting:opacity-0"
     :ui="{
       container: 'p-2.5 sm:p-2.5',
       header: 'w-full',
@@ -53,32 +53,7 @@
 
     <template #footer>
       <ProductPrice :product />
-
-      <div class="ms-auto flex gap-3">
-        <UTooltip>
-          <UButton
-            :icon="
-              product.inCart
-                ? 'streamline-plump:shopping-cart-add-solid'
-                : 'streamline-plump:shopping-cart-add-remix'
-            "
-            size="xl"
-            variant="subtle"
-          />
-          <template #content>{{ product.inCart ? 'REMOVE FROM CART' : 'ADD TO CART' }}</template>
-        </UTooltip>
-
-        <UTooltip>
-          <UButton
-            :icon="product.inWishlist ? 'fa7-solid:heart' : 'fa7-regular:heart'"
-            size="xl"
-            variant="subtle"
-          />
-          <template #content>{{
-            product.inWishlist ? 'REMOVE FROM WISHLIST' : 'ADD TO WISHLIST'
-          }}</template>
-        </UTooltip>
-      </div>
+      <ProductActions :product class="ms-auto" />
     </template>
   </UPageCard>
 </template>

@@ -73,6 +73,8 @@ export default defineNuxtConfig({
         'material-symbols',
         'line-md',
         'lucide',
+        'carbon',
+        'streamline-plump',
       ],
       remote: false,
     },

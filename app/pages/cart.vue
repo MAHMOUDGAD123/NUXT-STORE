@@ -7,9 +7,14 @@
     name: 'cart',
     pageHero: 'CART',
     pageHeroIcon: 'fa7-solid:cart-shopping',
+    layout: 'filter-layout',
   });
+
+  const cartStore = useCartStore();
+  const { cartItems } = storeToRefs(cartStore);
+  const emptyCart = computed(() => cartItems.value.length === 0);
 </script>
 
 <template>
-  <div class="flex flex-col items-center gap-4"></div>
+  <ShopCardGrid :productsList="cartItems" :isEmpty="emptyCart" />
 </template>

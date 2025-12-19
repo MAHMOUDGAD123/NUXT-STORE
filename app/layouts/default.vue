@@ -16,9 +16,9 @@
     <MainHeader />
 
     <UContainer as="main" class="min-h-[calc(100vh-var(--ui-header-height))]">
-      <Transition appear name="fade" mode="out-in">
-        <PageHeroCard :title="$route.meta.pageHero" :key="$route.name" />
-      </Transition>
+      <!-- <Transition appear name="fade" mode="out-in"> -->
+      <PageHeroCard :title="$route.meta.pageHero" />
+      <!-- </Transition> -->
 
       <slot></slot>
     </UContainer>

@@ -1,6 +1,6 @@
 import { skipHydrate } from 'pinia';
 
-export const useProductStore = defineStore('products', ({ action }) => {
+export const useProductsStore = defineStore('products', ({ action }) => {
   const initialValue: ProductsStore = {
     categories: [],
     itemCount: 0,
