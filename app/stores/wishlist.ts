@@ -1,10 +1,16 @@
 export const useWishlistStore = defineStore('wishlist', () => {
+  const { productsData } = storeToRefs(useProductsStore());
   const categoryFilterStore = useCategoryFilterStore();
   const { filteredProducts } = storeToRefs(categoryFilterStore);
   const toast = useToast();
 
   const wishlistProducts = computed(() =>
     filteredProducts.value.filter((product) => product.inWishlist),
+  );
+  const wishlistItemsCount = computed(() =>
+    productsData.value.list.reduce((total, prod) => {
+      return prod.inWishlist ? total + 1 : total;
+    }, 0),
   );
 
   const toggleWishlistItem = (product: ProductWithMetaData) => {
@@ -17,13 +23,11 @@ export const useWishlistStore = defineStore('wishlist', () => {
       color: product.inWishlist ? 'primary' : 'warning',
       type: 'foreground',
     });
-    console.clear();
-    const logger = createLogger();
-    logger.info(product);
   };
 
   return {
     wishlistProducts,
+    wishlistItemsCount,
     toggleWishlistItem,
   };
 });

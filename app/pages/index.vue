@@ -11,10 +11,16 @@
     layout: 'filter-layout',
   });
 
-  const { filteredProducts } = storeToRefs(useCategoryFilterStore());
+  const route = useRoute();
+  const { productsRenderList } = storeToRefs(useProductsStore());
+  const { filteredProducts, currentFilter } = storeToRefs(useCategoryFilterStore());
+  const shopList = computed(() =>
+    currentFilter.value === 'all' ? productsRenderList.value : filteredProducts.value,
+  );
+
   const emptyStore = computed(() => filteredProducts.value.length === 0);
 </script>
 
 <template>
-  <ShopCardGrid :productsList="filteredProducts" :isEmpty="emptyStore" />
+  <ShopCardGrid :productsList="shopList" :isEmpty="emptyStore" />
 </template>

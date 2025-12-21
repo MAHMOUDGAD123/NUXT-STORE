@@ -9,12 +9,13 @@ interface FilterOptionsMapProps {
 type FilterCategoryLookup = Record<Category, ProductWithMetaData[]>;
 
 export const useCategoryFilterStore = defineStore('categoryFilter', ({ action }) => {
+  const route = useRoute();
   const defaultValue: FilterCategory = 'all';
-  const currentValue = skipHydrate(
+  const currentFilter = skipHydrate(
     useSessionStorage<FilterCategory>('__nuxt_store_filter_cat__', defaultValue),
   );
   const productsStore = useProductsStore();
-  const { productsData } = storeToRefs(productsStore);
+  const { productsData, productsRenderList } = storeToRefs(productsStore);
 
   const _filterMetaDataMap: Record<
     FilterCategory,
@@ -95,6 +96,7 @@ export const useCategoryFilterStore = defineStore('categoryFilter', ({ action })
 
   const _buildCategorylookup = action(() => {
     const lookup = {} as FilterCategoryLookup;
+    const logger = createLogger();
     productsData.value.list.forEach((product) => {
       if (lookup[product.category]) {
         lookup[product.category].push(product);
@@ -108,21 +110,21 @@ export const useCategoryFilterStore = defineStore('categoryFilter', ({ action })
   const _productCategoryLookup: FilterCategoryLookup = _buildCategorylookup();
 
   const filteredProducts = computed(() =>
-    currentValue.value === 'all'
+    currentFilter.value === 'all'
       ? productsData.value.list
-      : _productCategoryLookup[currentValue.value],
+      : _productCategoryLookup[currentFilter.value],
   );
 
   const filterPageTitle = computed(() =>
-    currentValue.value === 'all' ? 'Electronics' : _filterMetaDataMap[currentValue.value].label,
+    currentFilter.value === 'all' ? 'Electronics' : _filterMetaDataMap[currentFilter.value].label,
   );
 
   const setFilter = (newValue: FilterCategory) => {
-    currentValue.value = newValue;
+    currentFilter.value = newValue;
   };
 
   const resetFilter = () => {
-    currentValue.value = 'all';
+    currentFilter.value = 'all';
   };
 
   const getCategory = (category: FilterCategory, propertyKey?: keyof FilterOptionsMapProps) => {
@@ -134,7 +136,7 @@ export const useCategoryFilterStore = defineStore('categoryFilter', ({ action })
   return {
     filterOptions: [..._filterOptionsMap.values()],
     filteredProducts,
-    currentValue,
+    currentFilter,
     filterPageTitle,
     setFilter,
     resetFilter,

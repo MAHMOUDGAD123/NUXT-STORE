@@ -28,15 +28,13 @@
   const iconSize: USize = 'xl';
 
   // Wishlist
-  const { wishlistProducts } = storeToRefs(useWishlistStore());
-  const wishlistSize = computed(() => wishlistProducts.value.length);
+  const { wishlistItemsCount: wishlistSize } = storeToRefs(useWishlistStore());
   const wishlistSizeDisplay = computed(() =>
     wishlistSize.value > 9 ? '+9' : `${wishlistSize.value}`,
   );
 
   // Cart
-  const { cartItems } = storeToRefs(useCartStore());
-  const cartSize = computed(() => cartItems.value.length);
+  const { cartItemsCount: cartSize } = storeToRefs(useCartStore());
   const cartSizeDisplay = computed(() => (cartSize.value > 9 ? '+9' : `${cartSize.value}`));
 </script>
 

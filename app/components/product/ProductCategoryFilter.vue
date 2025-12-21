@@ -1,6 +1,6 @@
 <script setup lang="ts">
   const categoryFilterStore = useCategoryFilterStore();
-  const { currentValue } = storeToRefs(categoryFilterStore);
+  const { currentFilter } = storeToRefs(categoryFilterStore);
 </script>
 
 <template>
@@ -22,12 +22,12 @@
         item: 'cursor-pointer border-4 border-accented transition-all duration-global mx-2 hover:border-primary-800',
       }"
       name="category-filter"
-      v-model="currentValue"
+      v-model="currentFilter"
     >
       <template #label="{ item }">
         <div
           class="flex w-full items-center transition-colors"
-          :class="{ 'text-primary': item.value === currentValue }"
+          :class="{ 'text-primary': item.value === currentFilter }"
         >
           <span class="font-bold">{{ item.label }}</span>
           <div class="relative ms-auto h-5 w-5 rounded-full">

@@ -20,6 +20,7 @@
 
 <template>
   <UFooter
+    id="__main_footer__"
     :ui="{
       container: 'py-0 tex-center',
       center: 'flex gap-0 xsm:gap-4 flex-col xsm:flex-row items-center',
