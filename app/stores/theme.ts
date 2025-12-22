@@ -27,12 +27,18 @@ export const useThemeStore = defineStore('theme', ({ action }) => {
 
     const switchButton = ev?.currentTarget as HTMLButtonElement | null;
     const rect = switchButton?.getBoundingClientRect();
-    // Get click coordinates or fallback to top-right
-    const x = rect?.x ? rect.x + 0.5 * rect.width : window.innerWidth;
-    const y = rect?.y ? rect.y + 0.5 * rect.height : 0;
 
-    document.documentElement.style.setProperty('--toggle-x', `${x}px`);
-    document.documentElement.style.setProperty('--toggle-y', `${y}px`);
+    const x = rect ? rect.left + rect.width / 2 : window.innerWidth;
+    const y = rect ? rect.top + rect.height / 2 : 0;
+
+    // Go and take a look about the ~/assets/view-transition.css file
+    document.documentElement.style.setProperty('--theme-toggle-x', `${x}px`);
+    document.documentElement.style.setProperty('--theme-toggle-y', `${y}px`);
+
+    if (!document.startViewTransition) {
+      document.documentElement.classList.replace(oldTheme, newTheme);
+      return;
+    }
 
     document.startViewTransition(() => {
       document.documentElement.classList.replace(oldTheme, newTheme);

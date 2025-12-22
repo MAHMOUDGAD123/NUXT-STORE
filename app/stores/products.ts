@@ -72,7 +72,7 @@ export const useProductsStore = defineStore('products', ({ action }) => {
     productsRenderListCount.value = 5;
   };
 
-  const getProductById = (id: string): ProductWithMetaData => {
+  const getProductById = (id: string): ProductWithMetaData | null => {
     return _productIdLookup[id];
   };
 

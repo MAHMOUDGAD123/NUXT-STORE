@@ -31,10 +31,13 @@
 
   const route = useRoute();
   const emptyData = routeEmptylistDataLookup[route.name];
+
+  // fix layout for the <UPageGrid />
+  // <UPageGrid class="grid grid-cols-1 py-9 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
 </script>
 
 <template>
-  <UPageGrid class="grid grid-cols-1 py-9 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
+  <UPageGrid class="grid-auto-fill-230! grid py-9">
     <ClientOnly>
       <template #default>
         <ProductCard

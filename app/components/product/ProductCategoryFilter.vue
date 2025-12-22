@@ -19,14 +19,14 @@
       variant="card"
       indicator="hidden"
       :ui="{
-        item: 'cursor-pointer border-4 border-accented transition-all duration-global mx-2 hover:border-primary-800',
+        item: 'cursor-pointer border-4 border-accented hover:transition-[color_border-color] duration-global mx-2 hover:border-primary-800',
       }"
       name="category-filter"
       v-model="currentFilter"
     >
       <template #label="{ item }">
         <div
-          class="flex w-full items-center transition-colors"
+          class="flex w-full items-center"
           :class="{ 'text-primary': item.value === currentFilter }"
         >
           <span class="font-bold">{{ item.label }}</span>

@@ -5,15 +5,13 @@ export default defineNuxtPlugin({
   setup: () => {
     const route = useRoute();
     const ProductsStore = useProductsStore();
-    const { renderListCompleted, productsRenderListCount } = storeToRefs(ProductsStore);
+    const { renderListCompleted } = storeToRefs(ProductsStore);
     const { currentFilter } = storeToRefs(useCategoryFilterStore());
-    const logger = createLogger();
 
     const { observer } = useIntersectionObserver(
       () => {
         if (currentFilter.value === 'all' && !renderListCompleted.value) {
           ProductsStore.updateRenderList();
-          logger.info(route.name, '-', productsRenderListCount.value);
         }
       },
       {

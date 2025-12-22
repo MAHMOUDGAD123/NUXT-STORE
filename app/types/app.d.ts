@@ -1,8 +1,14 @@
-import type { CustomRouteMap } from 'strict-vue-router';
+import type { RouteMap } from 'vue-router';
 
 declare module '#app' {
   interface PageMeta {
-    pageHero?: Uppercase<keyof CustomRouteMap>;
+    pageHero?: Uppercase<keyof RouteMap> | (string & {});
     pageHeroIcon?: string;
+  }
+
+  export interface NuxtError<DataT = unknown> {
+    data: {
+      overwriteStatusMessage: string;
+    };
   }
 }

@@ -11,7 +11,6 @@
     layout: 'filter-layout',
   });
 
-  const route = useRoute();
   const { productsRenderList } = storeToRefs(useProductsStore());
   const { filteredProducts, currentFilter } = storeToRefs(useCategoryFilterStore());
   const shopList = computed(() =>

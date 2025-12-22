@@ -12,8 +12,20 @@
   });
 
   const productsStore = useProductsStore();
-  const { getCategory } = useCategoryFilterStore();
   const product = productsStore.getProductById(route.params.product_id as string);
+
+  if (!product) {
+    throw createError({
+      statusCode: 404,
+      message: `Product id [${route.params.product_id}] not found`,
+      fatal: true,
+      data: {
+        overwriteStatusMessage: 'Product not found',
+      },
+    });
+  }
+
+  const { getCategory } = useCategoryFilterStore();
   route.meta.pageHeroIcon = `${getCategory(product.category, 'icon')}`;
 </script>
 

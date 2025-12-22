@@ -12,19 +12,20 @@
     :title="product.title"
     :description="product.description"
     variant="subtle"
-    class="cv-auto-800 hover:shadow-primary transtion-all scale-3d duration-500 hover:scale-101 hover:shadow-[0_0_3px_3px] starting:scale-95 starting:opacity-0"
+    class="cv-auto-700 shadow-primary shadow-sm transition-opacity duration-500 contain-content starting:opacity-0"
     :ui="{
       container: 'p-2.5 sm:p-2.5',
       header: 'w-full',
       footer: 'w-full flex flex-col gap-5 items-center',
-      title: 'font-bold text-[1.15rem]',
+      title: 'font-bold text-[1.15rem] line-clamp-2 text-dimmed',
+      description: 'line-clamp-3',
     }"
   >
     <template #header>
       <ULink :to="{ name: 'product', params: { product_id: product.id } }">
         <NuxtImg
           src="/logo.svg"
-          class="light:bg-accented bg-secondary hover:bg-primary-800 duration-global aspect-video w-full rounded-xl transition-colors"
+          class="light:bg-accented bg-secondary hover:bg-primary-800 hover:duration-global aspect-video w-full rounded-xl hover:transition-[background-color]"
         />
       </ULink>
     </template>
@@ -36,7 +37,9 @@
     </template>
 
     <template #description>
-      {{ product.description }}
+      <p :title="product.description">
+        {{ product.description }}
+      </p>
     </template>
 
     <template #leading>

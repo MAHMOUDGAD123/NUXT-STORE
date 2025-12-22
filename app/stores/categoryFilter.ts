@@ -9,13 +9,12 @@ interface FilterOptionsMapProps {
 type FilterCategoryLookup = Record<Category, ProductWithMetaData[]>;
 
 export const useCategoryFilterStore = defineStore('categoryFilter', ({ action }) => {
-  const route = useRoute();
   const defaultValue: FilterCategory = 'all';
   const currentFilter = skipHydrate(
     useSessionStorage<FilterCategory>('__nuxt_store_filter_cat__', defaultValue),
   );
   const productsStore = useProductsStore();
-  const { productsData, productsRenderList } = storeToRefs(productsStore);
+  const { productsData } = storeToRefs(productsStore);
 
   const _filterMetaDataMap: Record<
     FilterCategory,
