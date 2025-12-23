@@ -24,5 +24,7 @@
     </UContainer>
 
     <MainFooter />
+
+    <BackToTopBtn />
   </UApp>
 </template>

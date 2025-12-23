@@ -25,7 +25,7 @@
       container: 'py-0 tex-center',
       center: 'flex gap-0 xsm:gap-4 flex-col xsm:flex-row items-center',
     }"
-    class="dark:bg-secondary-900 light:bg-secondary-200"
+    class="dark:bg-secondary-900 light:bg-secondary-100"
   >
     <div class="flex items-center gap-2">
       <p class="text-muted text-center text-sm">Powered by</p>
