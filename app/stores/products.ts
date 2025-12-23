@@ -8,11 +8,11 @@ export const useProductsStore = defineStore('products', ({ action }) => {
     totalStockCount: 0,
   };
 
-  const productsRenderListCount = ref(0);
-  const _renderListIncreaseBy = 5;
   const _data = skipHydrate(useSessionStorage<ProductsStore>('__nuxt_store_data__', initialValue));
   let _productIdLookup: Record<string, ProductWithMetaData> = {};
 
+  const _renderListIncreaseBy = 5;
+  const productsRenderListCount = ref(0);
   const productsRenderList = computed<ProductWithMetaData[]>(() => {
     const list: ProductWithMetaData[] = [];
     for (let i = 0; i < productsRenderListCount.value; ++i) {
@@ -59,17 +59,17 @@ export const useProductsStore = defineStore('products', ({ action }) => {
     });
   });
 
-  const maxItemsCount = _data.value.itemCount;
   const updateRenderList = (increaseBy: number = _renderListIncreaseBy) => {
-    if (productsRenderList.value.length + increaseBy > maxItemsCount) {
-      productsRenderListCount.value = maxItemsCount;
+    const _maxItemsCount = _data.value.itemCount;
+    if (productsRenderList.value.length + increaseBy >= _maxItemsCount) {
+      productsRenderListCount.value = _maxItemsCount;
     } else {
       productsRenderListCount.value += increaseBy;
     }
   };
 
   const resetRenderList = () => {
-    productsRenderListCount.value = 5;
+    productsRenderListCount.value = _renderListIncreaseBy;
   };
 
   const getProductById = (id: string): ProductWithMetaData | null => {

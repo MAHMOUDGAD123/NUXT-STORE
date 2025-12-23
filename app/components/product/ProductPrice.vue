@@ -42,7 +42,7 @@
         icon="fa7-solid:dollar"
         :size
         :color="hasDicount ? 'primary' : 'neutral'"
-        class="light:bg-accented light:text-default"
+        :class="{ 'light:bg-accented light:text-default': !hasDicount }"
       />
     </UFieldGroup>
   </div>

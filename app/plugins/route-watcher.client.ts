@@ -7,6 +7,7 @@ export default defineNuxtPlugin({
     const ProductsStore = useProductsStore();
     const { renderListCompleted } = storeToRefs(ProductsStore);
     const { currentFilter } = storeToRefs(useCategoryFilterStore());
+    const targetRoutes: (keyof RouteMap)[] = ['shop'];
 
     const { observer } = useIntersectionObserver(
       () => {
@@ -19,13 +20,15 @@ export default defineNuxtPlugin({
       },
     );
 
+    // 1- Watch the route to reset the (productsRenderListCount) and disconnect the observer
+    //    when the route name isn't in the (targetRoutes)
+    // 2- Watch the filter to reset the (productsRenderListCount) on filter change
     watch(
-      () => route.name,
-      (currentRoute) => {
-        const targetRoutes: (keyof RouteMap)[] = ['shop'];
-
-        if (targetRoutes.includes(currentRoute)) {
-          observer.observe(document.getElementById('__main_footer__'));
+      [() => route.name, () => currentFilter.value],
+      ([currentRoute, currentFilter]) => {
+        if (targetRoutes.includes(currentRoute) && currentFilter === 'all') {
+          const targetEle = document.getElementById('__main_footer__');
+          observer.observe(targetEle);
         } else {
           ProductsStore.resetRenderList();
           observer.disconnect();
